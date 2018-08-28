@@ -3,76 +3,80 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/scripts.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet">
   <title>Pod Match</title>
 </head>
 <body>
+  <div class="header">PodCaster</div>
   <div class="container">
     <div class="foreground">
-      <div class="header">PodCaster</div>
 
 
-    <form id="user-input">
-      <div class="questionOne">
-        <div class="form-group">
-          <h1>1. How do you describe the world?</h1>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="round-answer" value="round" checked>
-            <label class="form-check-label" for="round">
-              Incontrovertibly round
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="flat-answer" value="flat">
-            <label class="form-check-label" for="flat">
-              Obviously flat
-            </label>
-          </div>
-        </div>
-      </div>
-      <!-- Picture-based question -->
-      <div class="questionTwo">
-        <div class="form-group">
-          <h1>2. How do you like to relax or engage?</h1>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="question2" id="nightmare-answer" value="nightmare" checked>
-            <label class="form-check-label" for="nightmare-answer">
-              With horror movies and nightmarish realities
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="question2" id="hilarity-answer" value="hilarity">
-            <label class="form-check-label" for="hilarity-answer">
-              Hilarity, uproar, and nonsense prevail.
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="question2" id="learning-answer" value="learning">
-            <label class="form-check-label" for="learning-answer">
-              Learning a new trade, skill, or DIY project.
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="question2" id="stories-answer" value="stories">
-            <label class="form-check-label" for="stories-answer">
-              Listening to stories that uplift my chicken soup.
-            </label>
+      <form id="user-input">
+        <div class="questionOne">
+          <div class="form-group">
+            <h1>1. How do you describe the world?</h1>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question1" id="round-answer" value="1A" checked>
+              <label class="form-check-label" for="round">
+                Incontrovertibly round
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question1" id="flat-answer" value="1B">
+              <label class="form-check-label" for="flat">
+                Obviously flat
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Range for triggerometer-->
-      <div class="questionThree">
-        <h1>3. Rate your current triggered-happy condition!</h1>
-        <label for="firstLabel">I can't be in the same room as pizza, don't talk to me!</label>
-        <label for="secondLabel" id="q3RightLabel">Talk to me about sex, politics, death, and other people's money!</label>
-        <input type="range" class="custom-range" min="0" max="5" step="1" id="question3">
-        <!-- <div class="float-left">
+        <hr />
+        <!-- Picture-based question -->
+        <div class="questionTwo">
+          <div class="form-group">
+            <h1>2. How do you like to relax or engage?</h1>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question2" id="nightmare-answer" value="2A" checked>
+              <label class="form-check-label" for="nightmare-answer">
+                With horror movies and nightmarish realities
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question2" id="hilarity-answer" value="2B">
+              <label class="form-check-label" for="hilarity-answer">
+                Hilarity, uproar, and nonsense prevail.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question2" id="learning-answer" value="2C">
+              <label class="form-check-label" for="learning-answer">
+                Learning a new trade, skill, or DIY project.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question2" id="stories-answer" value="2D">
+              <label class="form-check-label" for="stories-answer">
+                Listening to stories that uplift my chicken soup.
+              </label>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- Range for triggerometer-->
+        <div class="questionThree">
+          <h1>3. Rate your current triggered-happy condition!</h1>
+          <label for="firstLabel"><div class="left-label"><em>"I can't be in the same room <br>as pizza, don't talk to me!"</em></div></label>
+          <label for="secondLabel" id="q3RightLabel"><div class="right-label"><em>"Talk to me about sex, politics,<br> death, and other people's money!"</em></div></label>
+          <input type="range" class="custom-range" min="0" max="5" step="1" id="question3">
+          <hr />
+          <!-- <div class="float-left">
         </div> -->
       </div>
       <div class="questionFour">
@@ -80,100 +84,124 @@
           <h1>4. How do you feel about being told what to do?</h1>
           <select class="custom-select-lg" id="question4">
             <option selected>Choose from the following:</option>
-            <option value="1">I know what others want, need, and desire. People seek high and low for my pearls of wisdom.</option>
-            <option value="2">I read horoscopes. They make me feel toilet competent. </option>
-            <option value="3">Please, I'm desperate! Teach me how to breathe. I need help; regularly I feel desperate.</option>
+            <option value="4A">I know what others want, need, and desire. People seek high and low for my pearls of wisdom.</option>
+            <option value="4B">I read horoscopes. They make me feel toilet competent. </option>
+            <option value="4C">Please, I'm desperate! Teach me how to breathe. I need help; regularly I feel desperate.</option>
           </select>
         </div>
       </div>
+      <hr />
       <div class="questionFive">
         <h1>5. Who makes your heart beat? Who gives you purpose, drive, motivation? A hero?</h1>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="question5" id="spongebob-answer" value="Spongebob" checked>
-            <label class="form-check-label" for="spongebob-answer">
-              <img src="img/sb.jpg" alt="a picture of spongebob">
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="question5" id="katy-perry" value="perry">
-            <label class="form-check-label" for="katy-perry">
-              <img src="img/katy.jpg" alt="a photo of Katy Perry">
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="question5" id="michelle-obama" value="obama">
-            <label class="form-check-label" for="michelle-obama">
-              <img src="img/obama.jpg" alt="An image of Michelle Obama">
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="question5" id="ndtyson-answer" value="ndtyson">
-            <label class="form-check-label" for="ndtyson-answer">
-              <img src="img/neil.jpg" alt="a picture of Neil DeGrasse Tyson">
-            </label>
-          </div>
-        </div>
-        <div class="questionSix">
-          <div class="form-group">
-            <h1>6. What are your favorite types of facts?</h1>
-            <select class="custom-select" id="question6">
-              <option selected>Choose from the following:</option>
-              <option value="1">Alternative facts</option>
-              <option value="2">Evidence-based facts</option>
-              <option value="3">Opinions masquerading as facts</option>
-              <option value="4">I love my fax</option>
-            </select>
-          </div>
-        </div>
-        <div class="questionSeven">
-          <div class="form-group">
-            <h1>7. Click all that interests you:</h1>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck1" value="1">
-                <label class="custom-control-label" for="customCheck1">Star Wars</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck2" value="2">
-                <label class="custom-control-label" for="customCheck2">Battle Star Galactica</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck3" value="3">
-                <label class="custom-control-label" for="customCheck3">Space Force</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck4" value="4">
-                <label class="custom-control-label" for="customCheck4">The International Space Station</label>
-            </div>
-          </div>
-        </div>
-        <div class="questionEight">
-          <h1>8. Choose between the following:</h1>
+        <div class="row">
+          <div class="col-md-3">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="question8" id="fantasy-answer" value="0" checked>
+              <label class="form-check-label" for="spongebob-answer">
+                <input class="form-check-input" type="radio" name="question5" id="spongebob-answer" value="5A" checked>
+                <img src="img/sb.jpg" alt="a picture of spongebob">
+              </label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-check">
+              <label class="form-check-label" for="katy-perry">
+                <input class="form-check-input" type="radio" name="question5" id="katy-perry" value="5B">
+                <img src="img/katy.jpg" alt="a photo of Katy Perry">
+              </label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-check">
+              <label class="form-check-label" for="michelle-obama">
+                <input class="form-check-input" type="radio" name="question5" id="michelle-obama" value="5C">
+                <img src="img/obama.jpg" alt="An image of Michelle Obama">
+              </label>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-check">
+              <label class="form-check-label" for="ndtyson-answer">
+                <input class="form-check-input" type="radio" name="question5" id="ndtyson-answer" value="5D">
+                <img src="img/neil.jpg" alt="a picture of Neil DeGrasse Tyson">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="questionSix">
+        <div class="form-group">
+          <h1>6. What are your favorite types of facts?</h1>
+          <select class="custom-select" id="question6">
+            <option selected>Choose from the following:</option>
+            <option value="6A">Alternative facts</option>
+            <option value="6B">Evidence-based facts</option>
+            <option value="6C">Opinions masquerading as facts</option>
+            <option value="6D">I love my fax</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+      <div class="questionSeven">
+        <div class="form-group">
+          <h1>7. Click all that interests you:</h1>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" value="7A">
+            <label class="custom-control-label" for="customCheck1">Star Wars</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck2" value="7B">
+            <label class="custom-control-label" for="customCheck2">Battle Star Galactica</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck3" value="7C">
+            <label class="custom-control-label" for="customCheck3">Space Force</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck4" value="7D">
+            <label class="custom-control-label" for="customCheck4">The International Space Station</label>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="questionEight">
+        <h1>8. Choose between the following:</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="form-check">
               <label class="form-check-label" for="fantasy-answer">
+                <input class="form-check-input" type="radio" name="question8" id="fantasy-answer" value="8A" checked>
                 <img src="img/fantasy1.gif" alt="">
               </label>
             </div>
+          </div>
+          <div class="col-md-3">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="question8" id="comedy-answer" value="1">
               <label class="form-check-label" for="comedy-answer">
+                <input class="form-check-input" type="radio" name="question8" id="comedy-answer" value="8B">
                 <img src="img/cat.gif" alt="gif of cat">
               </label>
             </div>
+          </div>
+          <div class="col-md-3">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="question8" id="news-answer" value="3">
               <label class="form-check-label" for="news-answer">
+                <input class="form-check-input" type="radio" name="question8" id="news-answer" value="8C">
                 <img src="img/stewart.gif" alt="">
               </label>
             </div>
+          </div>
+          <div class="col-md-3">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="question8" id="einstein" value="5">
               <label class="form-check-label" for="einstein">
+                <input class="form-check-input" type="radio" name="question8" id="einstein" value="8D">
                 <img src="img/einstein.gif" alt="gif of Einstein">
               </label>
             </div>
           </div>
+        </div>
       </div>
+      <hr />
       <button type="submit" name="button">Submit</button>
     </form>
 
@@ -196,10 +224,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <p><img src="https://i1.sndcdn.com/avatars-000316821086-8aqvnm-t500x500.jpg">
+              <p><img src="https://i1.sndcdn.com/avatars-000316821086-8aqvnm-t500x500.jpg">
 
                 Are you a creative entrepreneur? Freelancer? Aspiring creative pro? If so, this podcast was made for you! Andy J. Miller is passionate about helping creative's strike the perfect balance between art and business. Through ridiculous analogies, personal stories and artist interviews, Andy hopes to help you break free from confusion and make a plan for your creative career success! You'll get this and MORE! (the more being Boyz II Men and Fraggle Rock references). <a href="http://www.creativepeptalk.com" target="_blank">http://www.creativepeptalk.com</a>
-                  </p>
+              </p>
 
             </div>
             <a href="https://itunes.apple.com/us/podcast/196-how-to-break-into-new-territory-side-quest-series-finale/id929743897?i=1000418218805&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
@@ -226,12 +254,12 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <p><img src="https://pbs.twimg.com/profile_images/578289731387047936/MxdXdQrT.jpeg">Lore is an award-winning, critically-acclaimed podcast about true life scary stories. Lore exposes the darker side of history, exploring the creatures, people, and places of our wildest nightmares.
+              <p><img src="https://pbs.twimg.com/profile_images/578289731387047936/MxdXdQrT.jpeg">Lore is an award-winning, critically-acclaimed podcast about true life scary stories. Lore exposes the darker side of history, exploring the creatures, people, and places of our wildest nightmares.
 
-                    Because sometimes the truth is more frightening than fiction.
+                Because sometimes the truth is more frightening than fiction.
 
-                    Each episode examines a new dark historical tale in a modern campfire experience. With more than 18,700 5-star reviews on Apple Podcasts and over 150-million listens, that's clearly a good thing. <a href="https://www.lorepodcast.com/" target="_blank">https://www.lorepodcast.com/</a>
-                  </p>
+                Each episode examines a new dark historical tale in a modern campfire experience. With more than 18,700 5-star reviews on Apple Podcasts and over 150-million listens, that's clearly a good thing. <a href="https://www.lorepodcast.com/" target="_blank">https://www.lorepodcast.com/</a>
+              </p>
             </div>
             <a href="https://itunes.apple.com/us/podcast/episode-93-a-place-to-lay-your-head/id978052928?i=1000418148990&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
           </div>
@@ -254,8 +282,8 @@
 
               <p><img src="https://www.earwolf.com/wp-content/uploads/2011/04/EAR_COVER_ComedyBangBang_2018Refresh_3000x3000_Final-300x300.jpg">
 
-                  Join host Scott Aukerman (“Comedy Bang! Bang!” on IFC, “Mr. Show”) for a weekly podcast that blends conversation and character work from today’s funniest comedians. While Scott begins by traditionally interviewing the celebrities, the open-door policy means an assortment of eccentric oddballs can pop by at any moment to chat, compete in games, and engage in comic revelry. With all that, and regular bonus episodes, we bet your favorite part will still be the plugs! <a href="https://www.earwolf.com/show/comedy-bang-bang/" target="_blank">https://www.earwolf.com/show/comedy-bang-bang/</a>
-                  </p>
+                Join host Scott Aukerman (“Comedy Bang! Bang!” on IFC, “Mr. Show”) for a weekly podcast that blends conversation and character work from today’s funniest comedians. While Scott begins by traditionally interviewing the celebrities, the open-door policy means an assortment of eccentric oddballs can pop by at any moment to chat, compete in games, and engage in comic revelry. With all that, and regular bonus episodes, we bet your favorite part will still be the plugs! <a href="https://www.earwolf.com/show/comedy-bang-bang/" target="_blank">https://www.earwolf.com/show/comedy-bang-bang/</a>
+              </p>
 
 
             </div>
@@ -281,10 +309,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <p><img src="https://www.thenosleeppodcast.com/wp-content/uploads/2014/09/NoSleep.Podcast.S4.Logo_1400.jpg">
+              <p><img src="https://www.thenosleeppodcast.com/wp-content/uploads/2014/09/NoSleep.Podcast.S4.Logo_1400.jpg">
 
-                  For the dark hours when you dare not close your eyes. Tales of horror to frighten and disturb. Join us as the sleepless hours tick past. Brace yourself… for The NoSleep Podcast. A multi-award winning anthology series of original horror stories, The NoSleep Podcast features a cast of talented voice actors, rich atmospheric music and sound effects to enhance the frightening tales. <a href="https://www.thenosleeppodcast.com/" target="_blank">https://www.thenosleeppodcast.com/</a>
-                  </p>
+                For the dark hours when you dare not close your eyes. Tales of horror to frighten and disturb. Join us as the sleepless hours tick past. Brace yourself… for The NoSleep Podcast. A multi-award winning anthology series of original horror stories, The NoSleep Podcast features a cast of talented voice actors, rich atmospheric music and sound effects to enhance the frightening tales. <a href="https://www.thenosleeppodcast.com/" target="_blank">https://www.thenosleeppodcast.com/</a>
+              </p>
 
 
             </div>
@@ -309,10 +337,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <img src="https://pbs.twimg.com/profile_images/1029457789997932544/hf0O0TTs_400x400.jpg">
+              <img src="https://pbs.twimg.com/profile_images/1029457789997932544/hf0O0TTs_400x400.jpg">
 
-                  <p>Jump on your broom and join The Ringer’s Mallory Rubin and Jason Concepcion as they take their signature deep dive into 'Harry Potter,' covering all the books and movies as well as the extended 'Potter' universe. <a href="https://soundcloud.com/bingemode" target="_blank">https://soundcloud.com/bingemode</a>
-                  </p>
+              <p>Jump on your broom and join The Ringer’s Mallory Rubin and Jason Concepcion as they take their signature deep dive into 'Harry Potter,' covering all the books and movies as well as the extended 'Potter' universe. <a href="https://soundcloud.com/bingemode" target="_blank">https://soundcloud.com/bingemode</a>
+              </p>
 
             </div>
             <a href="https://itunes.apple.com/us/podcast/harry-potter-and-the-order-of-the-phoenix-ch-1-5-harry-potter/id1243247464?i=1000418574460&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
@@ -336,10 +364,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <img src="https://pbs.twimg.com/profile_images/927982329762422784/5mvUotnr_400x400.jpg">
+              <img src="https://pbs.twimg.com/profile_images/927982329762422784/5mvUotnr_400x400.jpg">
 
-                  <p>Tim and Tyler represent a 5th-generation farming family and are passionate about bringing together a community of next-generation farmers and ag entrepreneurs focused on innovating their businesses! <a href="http://themodernacre.co/" target="_blank">http://www.themodernacre.com/</a>
-                  </p>
+              <p>Tim and Tyler represent a 5th-generation farming family and are passionate about bringing together a community of next-generation farmers and ag entrepreneurs focused on innovating their businesses! <a href="http://themodernacre.co/" target="_blank">http://www.themodernacre.com/</a>
+              </p>
 
 
             </div>
@@ -364,17 +392,17 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <img src="https://is4-ssl.mzstatic.com/image/thumb/Music111/v4/e2/0d/29/e20d298c-76f7-860a-8004-d48d2eb8920a/source/1200x630bb.jpg">
+              <img src="https://is4-ssl.mzstatic.com/image/thumb/Music111/v4/e2/0d/29/e20d298c-76f7-860a-8004-d48d2eb8920a/source/1200x630bb.jpg">
 
-                  <p>Actionable lessons from the world’s greatest thinkers and doers make the Big Think audience smarter, faster.
+              <p>Actionable lessons from the world’s greatest thinkers and doers make the Big Think audience smarter, faster.
 
-                  Big Think experts are at the top of their field, or disrupting it.
+                Big Think experts are at the top of their field, or disrupting it.
 
-                  The world’s largest archive of lessons from the people
-                  changing how we work, live, and experience.
+                The world’s largest archive of lessons from the people
+                changing how we work, live, and experience.
 
-                  Unbiased, trusted and reliable. Millions of users seek us out, including thousands of experts inside the Big Think network. <a href="https://bigthink.com/" target="_blank">https://bigthink.com/</a>
-                  </p>
+                Unbiased, trusted and reliable. Millions of users seek us out, including thousands of experts inside the Big Think network. <a href="https://bigthink.com/" target="_blank">https://bigthink.com/</a>
+              </p>
 
 
             </div>
@@ -399,10 +427,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <img src="https://starburns.audio/wp-content/uploads/2018/02/SMALL-DOSES-big-768x768.jpg">
+              <img src="https://starburns.audio/wp-content/uploads/2018/02/SMALL-DOSES-big-768x768.jpg">
 
-                  <p>Comedian, actress, writer, producer, and more, Amanda Seales doesn’t just make you laugh, she makes change! With an uncanny knack for taking serious topics (racism, rape culture, sexism, police brutality, etc.) and with humor, making them relatable and interesting, she combines intellectual wit, irreverent silliness and a pop culture obsession to create her unique style of smart funny content for the stage and screens. <a href="https://starburns.audio/podcasts/small-doses-with-amanda-seales/" target="_blank">https://starburns.audio/podcasts/small-doses-with-amanda-seales/</a>
-                  </p>
+              <p>Comedian, actress, writer, producer, and more, Amanda Seales doesn’t just make you laugh, she makes change! With an uncanny knack for taking serious topics (racism, rape culture, sexism, police brutality, etc.) and with humor, making them relatable and interesting, she combines intellectual wit, irreverent silliness and a pop culture obsession to create her unique style of smart funny content for the stage and screens. <a href="https://starburns.audio/podcasts/small-doses-with-amanda-seales/" target="_blank">https://starburns.audio/podcasts/small-doses-with-amanda-seales/</a>
+              </p>
 
 
             </div>
@@ -427,10 +455,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <img src="http://toqueland.com/wp-content/uploads/2018/02/SavageLovecast.jpeg">
+              <img src="http://toqueland.com/wp-content/uploads/2018/02/SavageLovecast.jpeg">
 
-                  <p>Dan Savage is an author, a sex-advice columnist, a podcaster, a pundit, and a public speaker. "Savage Love," Dan's sex-advice column, first appeared in the The Stranger, Seattle’s alternative weekly, in 1991. The column is now syndicated to more than 50 papers across the United States and Canada. Dan has published six books. His newest book, American Savage, will be published in May of 2013. Dan’s graphic, pragmatic, and humorous advice has changed the cultural conversation about monogamy, gay rights, religiosity, and politics. <a href="https://www.savagelovecast.com/" target="_blank">https://www.savagelovecast.com/</a>
-                  </p>
+              <p>Dan Savage is an author, a sex-advice columnist, a podcaster, a pundit, and a public speaker. "Savage Love," Dan's sex-advice column, first appeared in the The Stranger, Seattle’s alternative weekly, in 1991. The column is now syndicated to more than 50 papers across the United States and Canada. Dan has published six books. His newest book, American Savage, will be published in May of 2013. Dan’s graphic, pragmatic, and humorous advice has changed the cultural conversation about monogamy, gay rights, religiosity, and politics. <a href="https://www.savagelovecast.com/" target="_blank">https://www.savagelovecast.com/</a>
+              </p>
 
 
             </div>
@@ -455,8 +483,8 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <p><img src="https://media.npr.org/assets/img/2018/08/06/npr_wwdtm_podcasttile_sq-1e9edf5dfb49a3fff3703764e39442173ba8558a-s700-c85.jpg">NPR's weekly current events quiz. Have a laugh and test your news knowledge while figuring out what's real and what we've made up. The show averages about 6 million weekly listeners on air and via podcast. <a href="https://www.npr.org/podcasts/344098539/wait-wait-don-t-tell-me" target="_blank">https://www.npr.org/podcasts/</a>
-                  </p>
+              <p><img src="https://media.npr.org/assets/img/2018/08/06/npr_wwdtm_podcasttile_sq-1e9edf5dfb49a3fff3703764e39442173ba8558a-s700-c85.jpg">NPR's weekly current events quiz. Have a laugh and test your news knowledge while figuring out what's real and what we've made up. The show averages about 6 million weekly listeners on air and via podcast. <a href="https://www.npr.org/podcasts/344098539/wait-wait-don-t-tell-me" target="_blank">https://www.npr.org/podcasts/</a>
+              </p>
 
 
             </div>
@@ -481,10 +509,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <img src="https://is4-ssl.mzstatic.com/image/thumb/Music91/v4/aa/45/19/aa451911-4fe8-9112-e4d2-1e139810a207/source/400x400bb.jpg">
+              <img src="https://is4-ssl.mzstatic.com/image/thumb/Music91/v4/aa/45/19/aa451911-4fe8-9112-e4d2-1e139810a207/source/400x400bb.jpg">
 
-                  <p>A podcast from the QI offices in which the writers of the hit BBC show huddle around a microphone and discuss the best things they've found out this week. Hosted by Dan Schreiber. <a href="https://www.nosuchthingasafish.com/" target="_blank">nosuchthingasafish.com</a>
-                  </p>
+              <p>A podcast from the QI offices in which the writers of the hit BBC show huddle around a microphone and discuss the best things they've found out this week. Hosted by Dan Schreiber. <a href="https://www.nosuchthingasafish.com/" target="_blank">nosuchthingasafish.com</a>
+              </p>
 
 
             </div>
@@ -509,10 +537,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <img src="https://is5-ssl.mzstatic.com/image/thumb/Music62/v4/6b/ba/6f/6bba6f72-1188-d0b7-50b5-01d536f8a8b9/source/400x400bb.jpg">
+              <img src="https://is5-ssl.mzstatic.com/image/thumb/Music62/v4/6b/ba/6f/6bba6f72-1188-d0b7-50b5-01d536f8a8b9/source/400x400bb.jpg">
 
-                  <p>The Casket of Fictional Delights specialises in producing high quality audio recordings of short stories and flash fiction compilations. The audios are recorded by actors and voiceover artists from around the world and produced by a professional studio manager ensuring we maintain a consistent high standard. We have produced some forty recordings and our podcasts on iTunes are found in the Top 20 ‘Short Story’ podcasts. <a href="https://www.thecasket.co.uk/audio/" target="_blank">https://www.thecasket.co.uk/audio/</a>
-                  </p>
+              <p>The Casket of Fictional Delights specialises in producing high quality audio recordings of short stories and flash fiction compilations. The audios are recorded by actors and voiceover artists from around the world and produced by a professional studio manager ensuring we maintain a consistent high standard. We have produced some forty recordings and our podcasts on iTunes are found in the Top 20 ‘Short Story’ podcasts. <a href="https://www.thecasket.co.uk/audio/" target="_blank">https://www.thecasket.co.uk/audio/</a>
+              </p>
 
 
             </div>
@@ -537,10 +565,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <img src="https://static1.squarespace.com/static/51e7119ae4b01c2e6a200e01/t/56f04169b6aa603335257757/1424727845212/?format=750w">
+              <img src="https://static1.squarespace.com/static/51e7119ae4b01c2e6a200e01/t/56f04169b6aa603335257757/1424727845212/?format=750w">
 
-                  <p>WELCOME TO NIGHT VALE is a twice-monthly podcast in the style of community updates for the small desert town of Night Vale, featuring local weather, news, announcements from the Sheriff's Secret Police, mysterious lights in the night sky, dark hooded figures with unknowable powers, and cultural events. <a href="http://www.welcometonightvale.com/" target="_blank">http://www.welcometonightvale.com/</a>
-                  </p>
+              <p>WELCOME TO NIGHT VALE is a twice-monthly podcast in the style of community updates for the small desert town of Night Vale, featuring local weather, news, announcements from the Sheriff's Secret Police, mysterious lights in the night sky, dark hooded figures with unknowable powers, and cultural events. <a href="http://www.welcometonightvale.com/" target="_blank">http://www.welcometonightvale.com/</a>
+              </p>
 
 
             </div>
@@ -565,10 +593,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <img src="https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/08/6e/dc/086edcd4-1d2f-25e3-3c68-0d6f7fda8786/source/400x400bb.jpg">
+              <img src="https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/08/6e/dc/086edcd4-1d2f-25e3-3c68-0d6f7fda8786/source/400x400bb.jpg">
 
-                  <p>Each episode of our show deals with an investigation of a religion, fringe group, or fringe science practice. Join us as we ask tough questions, explore the nature of belief, and always find the humor in life’s biggest mysteries. <a href="http://ohnopodcast.com/" target="_blank">http://ohnopodcast.com/</a>
-                  </p>
+              <p>Each episode of our show deals with an investigation of a religion, fringe group, or fringe science practice. Join us as we ask tough questions, explore the nature of belief, and always find the humor in life’s biggest mysteries. <a href="http://ohnopodcast.com/" target="_blank">http://ohnopodcast.com/</a>
+              </p>
 
 
             </div>
@@ -593,10 +621,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <img src="https://is4-ssl.mzstatic.com/image/thumb/Music127/v4/3e/59/50/3e5950a9-5880-4ea4-295e-43af2a194569/source/400x400bb.jpg">
+              <img src="https://is4-ssl.mzstatic.com/image/thumb/Music127/v4/3e/59/50/3e5950a9-5880-4ea4-295e-43af2a194569/source/400x400bb.jpg">
 
-                  <p>In every episode, host LeVar Burton (Reading Rainbow, Roots, Star Trek) invites you to take a break from your daily life, and dive into a great story. LeVar’s narration blends with gorgeous soundscapes to bring stories by Neil Gaiman, Haruki Murakami, Octavia Butler, Ray Bradbury and more to life. So, if you’re ready, let’s take a deep breath... <a href="http://www.levarburtonpodcast.com/" target="_blank">http://www.levarburtonpodcast.com/</a>
-                  </p>
+              <p>In every episode, host LeVar Burton (Reading Rainbow, Roots, Star Trek) invites you to take a break from your daily life, and dive into a great story. LeVar’s narration blends with gorgeous soundscapes to bring stories by Neil Gaiman, Haruki Murakami, Octavia Butler, Ray Bradbury and more to life. So, if you’re ready, let’s take a deep breath... <a href="http://www.levarburtonpodcast.com/" target="_blank">http://www.levarburtonpodcast.com/</a>
+              </p>
 
 
             </div>
@@ -621,10 +649,10 @@
           <div class="modal-body">
             <div class="container-fluid">
 
-                <img src="https://is4-ssl.mzstatic.com/image/thumb/Music111/v4/3e/df/18/3edf181e-94b5-7867-2a80-48c0127fb457/source/400x400bb.jpg">
+              <img src="https://is4-ssl.mzstatic.com/image/thumb/Music111/v4/3e/df/18/3edf181e-94b5-7867-2a80-48c0127fb457/source/400x400bb.jpg">
 
-                  <p>Ben Bowlin is a veteran podcaster at HowStuffWorks and has worked on numerous shows, including Stuff They Don't Want You To Know, CarStuff and BrainStuff. Over years of bizarre research on everything from ancient civilizations to previously undiscovered (and hilarious) antics of history’s most influential figures and institutions, Ben and his team have compiled the absolute best, weirdest and most ridiculous stories in human history. <a href="https://www.ridiculoushistoryshow.com/" target="_blank">www.ridiculoushistoryshow.com</a>
-                  </p>
+              <p>Ben Bowlin is a veteran podcaster at HowStuffWorks and has worked on numerous shows, including Stuff They Don't Want You To Know, CarStuff and BrainStuff. Over years of bizarre research on everything from ancient civilizations to previously undiscovered (and hilarious) antics of history’s most influential figures and institutions, Ben and his team have compiled the absolute best, weirdest and most ridiculous stories in human history. <a href="https://www.ridiculoushistoryshow.com/" target="_blank">www.ridiculoushistoryshow.com</a>
+              </p>
 
 
             </div>
@@ -641,7 +669,7 @@
 
 
   </div>
-  </div> <!--CONTAINER-->
+</div> <!--CONTAINER-->
 </body>
 </div>
 </html>
