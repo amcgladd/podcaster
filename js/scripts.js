@@ -99,9 +99,6 @@ function finalScoreProducer (truth,smarts) {
       var finalScore = finalScoreProducer(truthiness,intelligence);
       console.log(finalScore);
 
-      var truthiness = 0;
-      var intelligence = 0;
-
       switch (finalScore) {
         case "1,1":
         $("#comedyBangBang").modal('show');
