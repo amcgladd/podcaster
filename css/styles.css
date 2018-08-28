@@ -1,4 +1,8 @@
 
+#q3RightLabel {
+  float: right;
+
+
 img {
   width: 165px;
   margin-right: 15px;
@@ -17,5 +21,4 @@ p {
 
 .modal-header {
   background-image: url(https://i2.pickpik.com/photos/20/186/442/notebook-paper-paper-texture-lines-preview.jpg);
-
 }

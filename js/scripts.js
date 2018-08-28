@@ -1,3 +1,4 @@
+
 var finalScore = truthiness + ',' + intelligence;
 
 
@@ -66,17 +67,11 @@ switch (score) {
     break;
 }
 
-
 var score = function(inputArray) {
   var truthiness = 0;
   var intelligence = 0;
-
 inputArray.map(function(type))
-
 }
-
-
-
 
 
 //front-end logic
