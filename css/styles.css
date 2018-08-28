@@ -58,6 +58,10 @@ h1 {
   font-size: 25px;
 }
 
+input[type='range']::-webkit-slider-thumb {
+  background: #6643bc;
+}
+
 label > input{ /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
