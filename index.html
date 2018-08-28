@@ -15,6 +15,166 @@
 <body>
   <div class="container">
 
+
+    <form id="user-input">
+      <div class="questionOne">
+        <div class="form-group">
+          <h1>1. How do you describe the world?</h1>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question1" id="round-answer" value="round" checked>
+            <label class="form-check-label" for="round">
+              Incontrovertibly round
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question1" id="flat-answer" value="flat">
+            <label class="form-check-label" for="flat">
+              Obviously flat
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Picture-based question -->
+      <div class="questionTwo">
+        <div class="form-group">
+          <h1>2. How do you like to relax or engage?</h1>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question2" id="nightmare-answer" value="nightmare" checked>
+            <label class="form-check-label" for="nightmare-answer">
+              With horror movies and nightmarish realities
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question2" id="hilarity-answer" value="hilarity">
+            <label class="form-check-label" for="hilarity-answer">
+              Hilarity, uproar, and nonsense prevail.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question2" id="learning-answer" value="learning">
+            <label class="form-check-label" for="learning-answer">
+              Learning a new trade, skill, or DIY project.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question2" id="stories-answer" value="stories">
+            <label class="form-check-label" for="stories-answer">
+              Listening to stories that uplift my chicken soup.
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- Range for triggerometer-->
+      <div class="questionThree">
+        <h1>3. Rate your current triggered-happy condition!</h1>
+        <label for="firstLabel">I can't be in the same room as pizza, don't talk to me!</label>
+        <label for="secondLabel" id="q3RightLabel">Talk to me about sex, politics, death, and other people's money!</label>
+        <input type="range" class="custom-range" min="0" max="5" step="1" id="question3">
+        <div class="float-left">
+        </div>
+      </div>
+      <div class="questionFour">
+        <div class="form-group">
+          <h1>4. How do you feel about being told what to do?</h1>
+          <select class="custom-select" id="question4">
+            <option selected>Choose from the following:</option>
+            <option value="1">I know what others want, need, and desire. People seek high and low for my pearls of wisdom.</option>
+            <option value="2">I read horoscopes. They make me feel toilet competent. </option>
+            <option value="3">Please, I'm desperate! Teach me how to breathe. I need help; regularly I feel desperate.</option>
+          </select>
+        </div>
+      </div>
+      <div class="questionFive">
+        <h1>5. Who makes your heart beat? Who gives you purpose, drive, motivation? A hero?</h1>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question5" id="spongebob-answer" value="Spongebob" checked>
+            <label class="form-check-label" for="spongebob-answer">
+              <img src="" alt="a picture of spongebob">
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question5" id="einstein-answer" value="einstein">
+            <label class="form-check-label" for="einstein-answer">
+              <img src="" alt="a photo of Albert Einstein">
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question5" id="ndtyson-answer" value="ndtyson">
+            <label class="form-check-label" for="ndtyson-answer">
+              <img src="" alt="a picture of Neil DeGrasse Tyson">
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question5" id="rogerrabbit-answer" value="roger">
+            <label class="form-check-label" for="rogerrabbit-answer">
+              <img src="" alt="A cartoon image of Roger Rabbit">
+            </label>
+          </div>
+        </div>
+        <div class="questionSix">
+          <div class="form-group">
+            <h1>6. What are your favorite types of facts?</h1>
+            <select class="custom-select" id="question6">
+              <option selected>Choose from the following:</option>
+              <option value="1">Alternative facts</option>
+              <option value="2">Evidence-based facts</option>
+              <option value="3">Opinions masquerading as facts</option>
+              <option value="4">I love my fax</option>
+            </select>
+          </div>
+        </div>
+        <div class="questionSeven">
+          <div class="form-group">
+            <h1>7. Click all that interests you:</h1>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1" value="1">
+                <label class="custom-control-label" for="customCheck1">Star Wars</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck2" value="2">
+                <label class="custom-control-label" for="customCheck2">Battle Star Galactica</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck3" value="3">
+                <label class="custom-control-label" for="customCheck3">Space Force</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck4" value="4">
+                <label class="custom-control-label" for="customCheck4">The International Space Station</label>
+            </div>
+          </div>
+        </div>
+        <div class="questionEight">
+          <h1>8. Choose between the following:</h1>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question8" id="fantasy-answer" value="0" checked>
+              <label class="form-check-label" for="fantasy-answer">
+                <img src="" alt="">
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question8" id="comedy-answer" value="1">
+              <label class="form-check-label" for="comedy-answer">
+                <img src="" alt="">
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question8" id="news-answer" value="3">
+              <label class="form-check-label" for="news-answer">
+                <img src="" alt="">
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="question8" id="educational-answer" value="5">
+              <label class="form-check-label" for="educational-answer">
+                <img src="" alt="">
+              </label>
+            </div>
+          </div>
+      </div>
+      <button type="submit" name="button">Submit</button>
+    </form>
+
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#creativePepTalk">
       Creative Pep Talk Button
