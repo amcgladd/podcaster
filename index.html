@@ -1,140 +1,485 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js"></script>
-    <title></title>
-  </head>
-  <body>
-    <div class="container">
-      <!-- <div id="myModal" class="modal bd-example-modal-lg" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title">Player <span class="winner-modal"></span> won!</h1>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <img src="https://media.giphy.com/media/9KQ2T38nNpz2g/giphy.gif" id="animal-farm">
-            </div>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+  <title>Pod Match</title>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#creativePepTalk">
+      Creative Pep Talk Button
+    </button>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="creativePepTalk" tabindex="-1" role="dialog" aria-labelledby="creativePepTalkTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="creativePepTalkTitle">Creative Pep Talk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-        </div>
+          <div class="modal-body">
+            <div class="container-fluid">
 
-      </div> -->
-      <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Find Yur Podcast
-</button>
+                <p><img src="https://i1.sndcdn.com/avatars-000316821086-8aqvnm-t500x500.jpg">
 
-<!-- Modal -->
-<!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Creative Pep Talk</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p><em>Are you a creative entrepreneur? Freelancer? Aspiring creative pro?</em> If so, this podcast was made for you!
+                Are you a creative entrepreneur? Freelancer? Aspiring creative pro? If so, this podcast was made for you! Andy J. Miller is passionate about helping creative's strike the perfect balance between art and business. Through ridiculous analogies, personal stories and artist interviews, Andy hopes to help you break free from confusion and make a plan for your creative career success! You'll get this and MORE! (the more being Boyz II Men and Fraggle Rock references). <a href="http://www.creativepeptalk.com" target="_blank">http://www.creativepeptalk.com</a>
+                  </p>
 
-        Andy J. Miller is passionate about helping creative's strike the perfect balance between art and business.
-
-        Through ridiculous analogies, personal stories and artist interviews, Andy hopes to help you break free from confusion and make a plan for your creative career success!
-
-        You'll get this and MORE!(the more being Boyz II Men and Fraggle Rock references)
-        </p>
-      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/488505498&amp;color=%23c4c42f&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-outline-secondary"><a href="http://www.creativepeptalk.com">Go to PodCast</a></button>
-      </div>
-    </div>
-  </div> -->
-
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Creative Pep Talk</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-3">IMG</div>
-              <div class="col-md-9 ml-auto">
-                <p><em>Are you a creative entrepreneur? Freelancer? Aspiring creative pro?</em> If so, this podcast was made for you!
-
-                Andy J. Miller is passionate about helping creative's strike the perfect balance between art and business.
-
-                Through ridiculous analogies, personal stories and artist interviews, Andy hopes to help you break free from confusion and make a plan for your creative career success!
-
-                You'll get this and MORE!(the more being Boyz II Men and Fraggle Rock references)
-                </p>
-              </div>
             </div>
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/488505498&amp;color=%23c4c42f&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-outline-secondary"><a href="http://www.creativepeptalk.com">Go to PodCast</a></button>
-        </div>
-      </div>
-    </div>
-
-  <!-- <div class="modal-body">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4">Put img here</div>
-      <div class="col-md-4 ml-auto"><p><em>Are you a creative entrepreneur? Freelancer? Aspiring creative pro?</em> If so, this podcast was made for you!
-
-      Andy J. Miller is passionate about helping creative's strike the perfect balance between art and business.
-
-      Through ridiculous analogies, personal stories and artist interviews, Andy hopes to help you break free from confusion and make a plan for your creative career success!
-
-      You'll get this and MORE!(the more being Boyz II Men and Fraggle Rock references)
-      </p></div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div> -->
-      <!-- <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
-    </div>
-    <div class="row">
-      <div class="col-sm-9">
-        Level 1: .col-sm-9
-        <div class="row">
-          <div class="col-8 col-sm-6">
-            Level 2: .col-8 .col-sm-6
-          </div>
-          <div class="col-4 col-sm-6">
-            Level 2: .col-4 .col-sm-6
+            <a href="https://itunes.apple.com/us/podcast/196-how-to-break-into-new-territory-side-quest-series-finale/id929743897?i=1000418218805&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
           </div>
         </div>
       </div>
-    </div> -->
-  </div>
-</div>
+    </div>
 
-</div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lore">
+      Lore Button
+    </button>
+
+    <!-- Modal 2-->
+
+    <div class="modal fade" id="lore" tabindex="-1" role="dialog" aria-labelledby="lore" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="lore">Lore</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <p><img src="https://pbs.twimg.com/profile_images/578289731387047936/MxdXdQrT.jpeg">Lore is an award-winning, critically-acclaimed podcast about true life scary stories. Lore exposes the darker side of history, exploring the creatures, people, and places of our wildest nightmares.
+
+                    Because sometimes the truth is more frightening than fiction.
+
+                    Each episode examines a new dark historical tale in a modern campfire experience. With more than 18,700 5-star reviews on Apple Podcasts and over 150-million listens, that's clearly a good thing. <a href="https://www.lorepodcast.com/" target="_blank">https://www.lorepodcast.com/</a>
+                  </p>
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/episode-93-a-place-to-lay-your-head/id978052928?i=1000418148990&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal 3-->
+
+    <div class="modal fade" id="comedyBangBang" tabindex="-1" role="dialog" aria-labelledby="comedyBangBang" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="comedyBangBang">Comedy Bang Bang!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+              <p><img src="https://www.earwolf.com/wp-content/uploads/2011/04/EAR_COVER_ComedyBangBang_2018Refresh_3000x3000_Final-300x300.jpg">
+
+                  Join host Scott Aukerman (“Comedy Bang! Bang!” on IFC, “Mr. Show”) for a weekly podcast that blends conversation and character work from today’s funniest comedians. While Scott begins by traditionally interviewing the celebrities, the open-door policy means an assortment of eccentric oddballs can pop by at any moment to chat, compete in games, and engage in comic revelry. With all that, and regular bonus episodes, we bet your favorite part will still be the plugs! <a href="https://www.earwolf.com/show/comedy-bang-bang/" target="_blank">https://www.earwolf.com/show/comedy-bang-bang/</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/comedy-bang-bang/id455020248?i=1000164112456&mt=2" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#comedyBangBang">
+      Comedy Bang Bang
+    </button>
+    <!--MODAL 4-->
+
+    <div class="modal fade" id="noSleep" tabindex="-1" role="dialog" aria-labelledby="noSleep" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="noSleep">No Sleep Podcast</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <p><img src="https://www.thenosleeppodcast.com/wp-content/uploads/2014/09/NoSleep.Podcast.S4.Logo_1400.jpg">
+
+                  For the dark hours when you dare not close your eyes. Tales of horror to frighten and disturb. Join us as the sleepless hours tick past. Brace yourself… for The NoSleep Podcast. A multi-award winning anthology series of original horror stories, The NoSleep Podcast features a cast of talented voice actors, rich atmospheric music and sound effects to enhance the frightening tales. <a href="https://www.thenosleeppodcast.com/" target="_blank">https://www.thenosleeppodcast.com/</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/ep-1-alex-carter/id1353109015?i=1000403897635&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#noSleep">
+      No Sleep Podcast
+    </button>
+    <!--Modal 5-->
+    <div class="modal fade" id="bingeMode" tabindex="-1" role="dialog" aria-labelledby="bingeMode" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bingeModep">Binge Mode</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <img src="https://pbs.twimg.com/profile_images/1029457789997932544/hf0O0TTs_400x400.jpg">
+
+                  <p>Jump on your broom and join The Ringer’s Mallory Rubin and Jason Concepcion as they take their signature deep dive into 'Harry Potter,' covering all the books and movies as well as the extended 'Potter' universe. <a href="https://soundcloud.com/bingemode" target="_blank">https://soundcloud.com/bingemode</a>
+                  </p>
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/harry-potter-and-the-order-of-the-phoenix-ch-1-5-harry-potter/id1243247464?i=1000418574460&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bingeMode">
+      Binge Mode
+    </button>
+    <!--MODAL 6-->
+    <div class="modal fade" id="theModernAcre" tabindex="-1" role="dialog" aria-labelledby="theModernAcre" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="theModernAcre">The Modern Acre</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <img src="https://pbs.twimg.com/profile_images/927982329762422784/5mvUotnr_400x400.jpg">
+
+                  <p>Tim and Tyler represent a 5th-generation farming family and are passionate about bringing together a community of next-generation farmers and ag entrepreneurs focused on innovating their businesses! <a href="http://themodernacre.co/" target="_blank">http://www.themodernacre.com/</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/1-introduction-to-modern-acre-agriculture-for-next/id1344108573?i=1000401356047&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#theModernAcre">
+      The Moden Acre
+    </button>
+    <!--MODAL 7-->
+    <div class="modal fade" id="bigThink" tabindex="-1" role="dialog" aria-labelledby="bigThink" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bigThink">Big Think</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Music111/v4/e2/0d/29/e20d298c-76f7-860a-8004-d48d2eb8920a/source/1200x630bb.jpg">
+
+                  <p>Actionable lessons from the world’s greatest thinkers and doers make the Big Think audience smarter, faster.
+
+                  Big Think experts are at the top of their field, or disrupting it.
+
+                  The world’s largest archive of lessons from the people
+                  changing how we work, live, and experience.
+
+                  Unbiased, trusted and reliable. Millions of users seek us out, including thousands of experts inside the Big Think network. <a href="https://bigthink.com/" target="_blank">https://bigthink.com/</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/2-henry-rollins-artist-monogamy-sexual-opportunism/id1002073669?i=1000376092313&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bigThink">
+      Big Think
+    </button>
+    <!---MODAL 8-->
+    <div class="modal fade" id="smallDoses" tabindex="-1" role="dialog" aria-labelledby="smallDoses" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="smallDoses">Small Doses</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <img src="https://starburns.audio/wp-content/uploads/2018/02/SMALL-DOSES-big-768x768.jpg">
+
+                  <p>Comedian, actress, writer, producer, and more, Amanda Seales doesn’t just make you laugh, she makes change! With an uncanny knack for taking serious topics (racism, rape culture, sexism, police brutality, etc.) and with humor, making them relatable and interesting, she combines intellectual wit, irreverent silliness and a pop culture obsession to create her unique style of smart funny content for the stage and screens. <a href="https://starburns.audio/podcasts/small-doses-with-amanda-seales/" target="_blank">https://starburns.audio/podcasts/small-doses-with-amanda-seales/</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/30-side-effects-of-being-in-your-30s/id1333316223?i=1000417017207&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#smallDoses">
+      Small Doses
+    </button>
+    <!---MODAL 9-->
+    <div class="modal fade" id="savageLove" tabindex="-1" role="dialog" aria-labelledby="savageLove" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="savageLove">Savage Lovecast</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <img src="http://toqueland.com/wp-content/uploads/2018/02/SavageLovecast.jpeg">
+
+                  <p>Comedian, actress, writer, producer, and more, Amanda Seales doesn’t just make you laugh, she makes change! With an uncanny knack for taking serious topics (racism, rape culture, sexism, police brutality, etc.) and with humor, making them relatable and interesting, she combines intellectual wit, irreverent silliness and a pop culture obsession to create her unique style of smart funny content for the stage and screens. <a href="https://www.savagelovecast.com/" target="_blank">https://www.savagelovecast.com/</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/savage-love-episode-617/id201376301?i=1000418189153&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savageLove">
+      Savage Lovecast
+    </button>
+    <!---MODAL 10-->
+    <div class="modal fade" id="waitWait" tabindex="-1" role="dialog" aria-labelledby="waitWait" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="waitWait">Wait Wait</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <p><img src="https://media.npr.org/assets/img/2018/08/06/npr_wwdtm_podcasttile_sq-1e9edf5dfb49a3fff3703764e39442173ba8558a-s700-c85.jpg">NPR's weekly current events quiz. Have a laugh and test your news knowledge while figuring out what's real and what we've made up. The show averages about 6 million weekly listeners on air and via podcast. <a href="https://www.npr.org/podcasts/344098539/wait-wait-don-t-tell-me" target="_blank">https://www.npr.org/podcasts/</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/best-of-not-my-job/id121493804?i=1000418068648&mt=2" target="_blank" class="audio-player" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#waitWait">
+      Wait Wait
+    </button>
+    <!---MODAL 11-->
+    <div class="modal fade" id="noSuchFish" tabindex="-1" role="dialog" aria-labelledby="noSuchFish" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="noSuchFish">No Such Fish</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Music91/v4/aa/45/19/aa451911-4fe8-9112-e4d2-1e139810a207/source/400x400bb.jpg">
+
+                  <p>A podcast from the QI offices in which the writers of the hit BBC show huddle around a microphone and discuss the best things they've found out this week. Hosted by Dan Schreiber. <a href="https://www.nosuchthingasafish.com/" target="_blank">nosuchthingasafish.com</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/episode-231-no-such-thing-as-a-24-minute-podcast/id840986946?i=1000418444105&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#noSuchFish">
+      No Such Fish
+    </button>
+    <!---MODAL 12-->
+    <div class="modal fade" id="casketDelights" tabindex="-1" role="dialog" aria-labelledby="casketDelights" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="casketDelights">Casket of Fictional Delights</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/Music62/v4/6b/ba/6f/6bba6f72-1188-d0b7-50b5-01d536f8a8b9/source/400x400bb.jpg">
+
+                  <p>The Casket of Fictional Delights specialises in producing high quality audio recordings of short stories and flash fiction compilations. The audios are recorded by actors and voiceover artists from around the world and produced by a professional studio manager ensuring we maintain a consistent high standard. We have produced some forty recordings and our podcasts on iTunes are found in the Top 20 ‘Short Story’ podcasts. <a href="https://www.thecasket.co.uk/audio/" target="_blank">https://www.thecasket.co.uk/audio/</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/something-like-pleasure/id445340968?i=1000416342539&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#casketDelights">
+      Casket of Fictional Delights
+    </button>
+    <!---MODAL 13-->
+    <div class="modal fade" id="nightVale" tabindex="-1" role="dialog" aria-labelledby="nightVale" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="nightVale">Welcome to Night Vale</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <img src="https://static1.squarespace.com/static/51e7119ae4b01c2e6a200e01/t/56f04169b6aa603335257757/1424727845212/?format=750w">
+
+                  <p>WELCOME TO NIGHT VALE is a twice-monthly podcast in the style of community updates for the small desert town of Night Vale, featuring local weather, news, announcements from the Sheriff's Secret Police, mysterious lights in the night sky, dark hooded figures with unknowable powers, and cultural events. <a href="http://www.welcometonightvale.com/" target="_blank">http://www.welcometonightvale.com/</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/2-glow-cloud/id536258179?i=1000162142599&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nightVale">
+      Welcome to Night Vale
+    </button>
+    <!---MODAL 14-->
+    <div class="modal fade" id="rossAndCarrie" tabindex="-1" role="dialog" aria-labelledby="rossAndCarrie" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rossAndCarrie">Oh No Ross and Carrie</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/08/6e/dc/086edcd4-1d2f-25e3-3c68-0d6f7fda8786/source/400x400bb.jpg">
+
+                  <p>Each episode of our show deals with an investigation of a religion, fringe group, or fringe science practice. Join us as we ask tough questions, explore the nature of belief, and always find the humor in life’s biggest mysteries. <a href="http://ohnopodcast.com/" target="_blank">http://ohnopodcast.com/</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/ross-and-carrie-go-mormon-part-1-and-it-came-to-pass/id425328515?i=1000398970671&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rossAndCarrie">
+      Oh No Ross and Carrie
+    </button>
+    <!---MODAL 15-->
+    <div class="modal fade" id="burtonReads" tabindex="-1" role="dialog" aria-labelledby="burtonReads" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="burtonReads">LeVar Burton Reads</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Music127/v4/3e/59/50/3e5950a9-5880-4ea4-295e-43af2a194569/source/400x400bb.jpg">
+
+                  <p>In every episode, host LeVar Burton (Reading Rainbow, Roots, Star Trek) invites you to take a break from your daily life, and dive into a great story. LeVar’s narration blends with gorgeous soundscapes to bring stories by Neil Gaiman, Haruki Murakami, Octavia Butler, Ray Bradbury and more to life. So, if you’re ready, let’s take a deep breath... <a href="http://www.levarburtonpodcast.com/" target="_blank">http://www.levarburtonpodcast.com/</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/episode-1-kin-by-bruce-mcallister/id1244649384?i=1000386477613&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#burtonReads">
+      LeVar Burton Reads
+    </button>
+    <!---MODAL 16-->
+    <div class="modal fade" id="ridiculousHistory" tabindex="-1" role="dialog" aria-labelledby="ridiculousHistory" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ridiculousHistory">Ridiculous History</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/Music111/v4/3e/df/18/3edf181e-94b5-7867-2a80-48c0127fb457/source/400x400bb.jpg">
+
+                  <p>Ben Bowlin is a veteran podcaster at HowStuffWorks and has worked on numerous shows, including Stuff They Don't Want You To Know, CarStuff and BrainStuff. Over years of bizarre research on everything from ancient civilizations to previously undiscovered (and hilarious) antics of history’s most influential figures and institutions, Ben and his team have compiled the absolute best, weirdest and most ridiculous stories in human history. <a href="https://www.ridiculoushistoryshow.com/" target="_blank">www.ridiculoushistoryshow.com</a>
+                  </p>
+
+
+            </div>
+            <a href="https://itunes.apple.com/us/podcast/angry-feds-and-deadly-booze-the-story-of-the-chemists-war/id1299826850?i=1000418396726&mt=2" target="_blank" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:133px;height:34px;background-size:contain;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ridiculousHistory">
+      Ridiculous History
+    </button>
+
+
+
+
+
+  </div> <!--CONTAINER-->
 </body>
-  </div>
+</div>
 </html>
