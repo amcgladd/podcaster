@@ -6,16 +6,66 @@ img {
 }
 
 h5 {
-  /* font-family: 'Lora', serif; */
+  font-family: 'Kanit', sans-serif;
+  color: white;
   font-size: 30px;
 }
 
 p {
+  font-family: 'Abel', sans-serif;
   font-size: 17px;
+
   /* font-family: 'Assistant', sans-serif; */
 }
 
-.modal-header {
-  background-image: url(https://i2.pickpik.com/photos/20/186/442/notebook-paper-paper-texture-lines-preview.jpg);
+h1 {
+  font-family: 'Chivo', sans-serif;
+  padding: 30px 0px 30px 0px;
+}
 
+.modal-header {
+  background-color: #6643bc;
+  /* background-image: url(https://i2.pickpik.com/photos/20/186/442/notebook-paper-paper-texture-lines-preview.jpg); */
+
+}
+
+.header {
+  font-family: 'Kanit', sans-serif;
+  font-size: 125px;
+  background-color: #6643bc;
+  color: white;
+  padding-left: 100px;
+}
+
+.foreground {
+  margin: 20px;
+  font-family: 'Abel', sans-serif;
+  font-size: 22px;
+}
+
+.range {
+  width:100%;
+}
+
+.left-label {
+  margin-left: 35px;
+  margin-right: 200px;
+  font-size: 25px;
+}
+
+.right-label {
+  margin-left: 200px;
+  font-size: 25px;
+}
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:5px solid #6643bc;
 }
