@@ -15,56 +15,56 @@
 <body>
   <div class="container">
 
+
     <form id="user-input">
-      <!-- q1 -->
       <div class="questionOne">
         <div class="form-group">
           <h1>1. How do you describe the world?</h1>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="round-answer" value="1A" checked>
+            <input class="form-check-input" type="radio" name="question1" id="round-answer" value="round" checked>
             <label class="form-check-label" for="round">
               Incontrovertibly round
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question1" id="flat-answer" value="1B">
+            <input class="form-check-input" type="radio" name="question1" id="flat-answer" value="flat">
             <label class="form-check-label" for="flat">
               Obviously flat
             </label>
           </div>
         </div>
       </div>
-      <!-- q2 -->
+      <!-- Picture-based question -->
       <div class="questionTwo">
         <div class="form-group">
           <h1>2. How do you like to relax or engage?</h1>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question2" id="nightmare-answer" value="2A" checked>
+            <input class="form-check-input" type="radio" name="question2" id="nightmare-answer" value="nightmare" checked>
             <label class="form-check-label" for="nightmare-answer">
               With horror movies and nightmarish realities
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question2" id="hilarity-answer" value="2B">
+            <input class="form-check-input" type="radio" name="question2" id="hilarity-answer" value="hilarity">
             <label class="form-check-label" for="hilarity-answer">
               Hilarity, uproar, and nonsense prevail.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question2" id="learning-answer" value="2C">
+            <input class="form-check-input" type="radio" name="question2" id="learning-answer" value="learning">
             <label class="form-check-label" for="learning-answer">
               Learning a new trade, skill, or DIY project.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question2" id="stories-answer" value="2D">
+            <input class="form-check-input" type="radio" name="question2" id="stories-answer" value="stories">
             <label class="form-check-label" for="stories-answer">
               Listening to stories that uplift my chicken soup.
             </label>
           </div>
         </div>
       </div>
-      <!--q3-->
+      <!-- Range for triggerometer-->
       <div class="questionThree">
         <h1>3. Rate your current triggered-happy condition!</h1>
         <label for="firstLabel">I can't be in the same room as pizza, don't talk to me!</label>
@@ -73,102 +73,99 @@
         <div class="float-left">
         </div>
       </div>
-      <!-- q4 -->
       <div class="questionFour">
         <div class="form-group">
           <h1>4. How do you feel about being told what to do?</h1>
           <select class="custom-select" id="question4">
-            <option value="4A">I know what others want, need, and desire. People seek high and low for my pearls of wisdom.</option>
-            <option value="4B">I read horoscopes. They make me feel toilet competent. </option>
-            <option value="4C">Please, I'm desperate! Teach me how to breathe. I need help; regularly I feel desperate.</option>
+            <option selected>Choose from the following:</option>
+            <option value="1">I know what others want, need, and desire. People seek high and low for my pearls of wisdom.</option>
+            <option value="2">I read horoscopes. They make me feel toilet competent. </option>
+            <option value="3">Please, I'm desperate! Teach me how to breathe. I need help; regularly I feel desperate.</option>
           </select>
         </div>
       </div>
-      <!-- q5 -->
       <div class="questionFive">
         <h1>5. Who makes your heart beat? Who gives you purpose, drive, motivation? A hero?</h1>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question5" id="spongebob-answer" value="5A" checked>
+            <input class="form-check-input" type="radio" name="question5" id="spongebob-answer" value="Spongebob" checked>
             <label class="form-check-label" for="spongebob-answer">
-              <img src="" alt="a picture of spongebob">
+              <img src="img/sb.jpg" alt="a picture of spongebob">
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question5" id="einstein-answer" value="5B">
-            <label class="form-check-label" for="einstein-answer">
-              <img src="" alt="a photo of Albert Einstein">
+            <input class="form-check-input" type="radio" name="question5" id="katy-perry" value="perry">
+            <label class="form-check-label" for="katy-perry">
+              <img src="img/katy.jpg" alt="a photo of Katy Perry">
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" name="question5" id="ndtyson-answer" value="5C">
+            <input class="form-check-input" type="radio" name="question5" id="michelle-obama" value="obama">
+            <label class="form-check-label" for="michelle-obama">
+              <img src="img/obama.jpg" alt="An image of Michelle Obama">
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="question5" id="ndtyson-answer" value="ndtyson">
             <label class="form-check-label" for="ndtyson-answer">
-              <img src="" alt="a picture of Neil DeGrasse Tyson">
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="question5" id="rogerrabbit-answer" value="5D">
-            <label class="form-check-label" for="rogerrabbit-answer">
-              <img src="" alt="A cartoon image of Roger Rabbit">
+              <img src="img/neil.jpg" alt="a picture of Neil DeGrasse Tyson">
             </label>
           </div>
         </div>
-        <!-- q6 -->
         <div class="questionSix">
           <div class="form-group">
             <h1>6. What are your favorite types of facts?</h1>
             <select class="custom-select" id="question6">
-              <option value="6A">Alternative facts</option>
-              <option value="6B">Evidence-based facts</option>
-              <option value="6C">Opinions masquerading as facts</option>
-              <option value="6D">I love my fax</option>
+              <option selected>Choose from the following:</option>
+              <option value="1">Alternative facts</option>
+              <option value="2">Evidence-based facts</option>
+              <option value="3">Opinions masquerading as facts</option>
+              <option value="4">I love my fax</option>
             </select>
           </div>
         </div>
-        <!-- q7 -->
         <div class="questionSeven">
           <div class="form-group">
             <h1>7. Click all that interests you:</h1>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck1" value="7A">
+              <input type="checkbox" class="custom-control-input" id="customCheck1" value="1">
                 <label class="custom-control-label" for="customCheck1">Star Wars</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck2" value="7B">
+              <input type="checkbox" class="custom-control-input" id="customCheck2" value="2">
                 <label class="custom-control-label" for="customCheck2">Battle Star Galactica</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck3" value="7C">
+              <input type="checkbox" class="custom-control-input" id="customCheck3" value="3">
                 <label class="custom-control-label" for="customCheck3">Space Force</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customCheck4" value="7D">
+              <input type="checkbox" class="custom-control-input" id="customCheck4" value="4">
                 <label class="custom-control-label" for="customCheck4">The International Space Station</label>
             </div>
           </div>
         </div>
-        <!--q8-->
         <div class="questionEight">
           <h1>8. Choose between the following:</h1>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="question8" id="fantasy-answer" value="8A" checked>
+              <input class="form-check-input" type="radio" name="question8" id="fantasy-answer" value="0" checked>
               <label class="form-check-label" for="fantasy-answer">
                 <img src="" alt="">
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="question8" id="comedy-answer" value="8B">
+              <input class="form-check-input" type="radio" name="question8" id="comedy-answer" value="1">
               <label class="form-check-label" for="comedy-answer">
                 <img src="" alt="">
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="question8" id="news-answer" value="8C">
+              <input class="form-check-input" type="radio" name="question8" id="news-answer" value="3">
               <label class="form-check-label" for="news-answer">
                 <img src="" alt="">
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="question8" id="educational-answer" value="8D">
+              <input class="form-check-input" type="radio" name="question8" id="educational-answer" value="5">
               <label class="form-check-label" for="educational-answer">
                 <img src="" alt="">
               </label>
@@ -430,7 +427,7 @@
 
                 <img src="http://toqueland.com/wp-content/uploads/2018/02/SavageLovecast.jpeg">
 
-                  <p>Comedian, actress, writer, producer, and more, Amanda Seales doesn’t just make you laugh, she makes change! With an uncanny knack for taking serious topics (racism, rape culture, sexism, police brutality, etc.) and with humor, making them relatable and interesting, she combines intellectual wit, irreverent silliness and a pop culture obsession to create her unique style of smart funny content for the stage and screens. <a href="https://www.savagelovecast.com/" target="_blank">https://www.savagelovecast.com/</a>
+                  <p>Dan Savage is an author, a sex-advice columnist, a podcaster, a pundit, and a public speaker. "Savage Love," Dan's sex-advice column, first appeared in the The Stranger, Seattle’s alternative weekly, in 1991. The column is now syndicated to more than 50 papers across the United States and Canada. Dan has published six books. His newest book, American Savage, will be published in May of 2013. Dan’s graphic, pragmatic, and humorous advice has changed the cultural conversation about monogamy, gay rights, religiosity, and politics. <a href="https://www.savagelovecast.com/" target="_blank">https://www.savagelovecast.com/</a>
                   </p>
 
 
