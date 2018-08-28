@@ -1,50 +1,64 @@
 switch (score) {
   case "1,1":
+  $("#comedyBangBang").modal('show')
 
     break;
   case "1,2":
+  $("#noSleep").modal('show')
 
     break;
   case "1,3":
-
+  $("#burtonReads").modal('show')
     break;
   case "1,4":
+  $("#bingeMode").modal('show')
 
   break;
   case "2,1":
+  $("#casketDelights").modal('show')
 
     break;
   case "2,2":
+  $("#nightVale").modal('show')
 
     break;
   case "2,3":
+  $("#lore").modal('show')
 
     break;
   case "2,4":
-
+  $("#ridiculousHistory").modal('show')
     break;
   case "3,1":
+  $("#creativePepTalk").modal('show')
 
     break;
   case "3,2":
+  $("#creativePepTalk").modal('show')
 
     break;
   case "3,3":
+  $("#rossAndCarrie").modal('show')
 
     break;
   case "3,4":
+  $("#theModernAcre").modal('show')
 
   break;
   case "4,1":
+  $("#waitWait").modal('show')
 
     break;
   case "4,2":
+  $("#noSuchFish").modal('show')
 
     break;
   case "4,3":
+  $("#smallDoses").modal('show')
 
     break;
   case "4,4":
+  $("#bigThink").modal('show')
 
     break;
 }
