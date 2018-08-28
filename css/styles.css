@@ -11,11 +11,33 @@ h5 {
 }
 
 p {
+  font-family: 'Abel', sans-serif;
   font-size: 17px;
+
   /* font-family: 'Assistant', sans-serif; */
+}
+
+h1 {
+  font-size:
+
 }
 
 .modal-header {
   background-image: url(https://i2.pickpik.com/photos/20/186/442/notebook-paper-paper-texture-lines-preview.jpg);
 
+}
+
+.header {
+  font-family: 'Kanit', sans-serif;
+  font-size: 100px;
+}
+
+.foreground {
+  margin: 20px;
+  font-family: 'Abel', sans-serif;
+  font-size: 22px;
+}
+
+.range {
+  width:100%;
 }
