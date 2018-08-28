@@ -1,6 +1,6 @@
 
 img {
-  width: 165px;
+  width: 185px;
   margin-right: 15px;
   float: left;
 }
@@ -21,6 +21,11 @@ p {
 h1 {
   font-family: 'Chivo', sans-serif;
   padding: 30px 0px 30px 0px;
+}
+
+button {
+  background-color:  #6643bc;
+  color: white;
 }
 
 .modal-header {
@@ -56,6 +61,10 @@ h1 {
 .right-label {
   margin-left: 200px;
   font-size: 25px;
+}
+
+.bold {
+  font-weight: bolder;
 }
 
 input[type='range']::-webkit-slider-thumb {
