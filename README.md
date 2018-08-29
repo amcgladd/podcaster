@@ -31,7 +31,7 @@ This application allows a user to answer a series of questions that will eventua
 
 ## Setup
 
-Clone this repository and open in any http server.
+Clone this repository and open in any http server. It is found at [Github Pages](https://amcgladd.github.io/podcast).
 
 ## Technologies Used
 
