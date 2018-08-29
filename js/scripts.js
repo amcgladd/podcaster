@@ -44,7 +44,7 @@ var masterPodcastList = [creativePepTalk, lore, comedyBangBang, noSleepPodcast, 
 
 function finalScoreProducer (score) {
   var finalScore = 0;
-    if (score >= 0 && score <= 5) {
+    if (score <= 5) {
       finalScore = 1;
     } else if (score >= 6 && score <= 10) {
       finalScore = 2;
@@ -79,14 +79,15 @@ function finalScoreProducer (score) {
         //q1 logic
         if (answer1 === "1A") {
           truthiness += 5;
-        }
+        } else { intelligence -= 2;
+      }
 
         //q2 logic
         if (answer2 === "2A") {
           intelligence += 5;
         } else if (answer2 === "2C") {
           intelligence += 2;
-        }
+      }
 
         //q3 logic
         truthiness += answer3;
@@ -96,40 +97,47 @@ function finalScoreProducer (score) {
           truthiness += 3;
         } else if (answer4 === "4C") {
           truthiness += 5;
-        }
+        } else  { truthiness -= 2;
+      }
 
         //q5 logic
         if (answer5 === "5B") {
-          intelligence += 1;
+          intelligence += 3;
         } else if (answer5 === "5C") {
-          intelligence +=3;
+          intelligence +=1;
         } else if (answer5 === "5D") {
           intelligence +=5;
-        }
+        } else { intelligence -= 1;
+      }
 
         //q6 logic
         if (answer6 === "6B") {
           truthiness += 5;
         } else if (answer6 === "6C") {
-          truthiness += 3;
+          truthiness += 2;
         } else if (answer6 === "6D") {
-          truthiness += 1;
-        }
+          truthiness -= 1;
+        } else { truthiness -= 3;
+      }
 
         //q7 logic
         intelligence += answer7Array.length;
 
         //q8 logic
         if (answer8 === "8B") {
-          intelligence += 1;
+          intelligence += 5;
         } else if (answer8 === "8C") {
-          intelligence += 3;
+          intelligence -= 1;
         } else if (answer8 === "8D") {
           intelligence += 5;
         }
 
+
+console.log("int = "+intelligence,"truthy = "+truthiness);
         var userTruth = finalScoreProducer(truthiness);
         var userIntelligence = finalScoreProducer(intelligence);
+
+
 
 // prototype for constructor
       masterPodcastList.forEach(function(podcast) {
