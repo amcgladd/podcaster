@@ -1,220 +1,216 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/scripts.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet">
-  <title>PodCaster</title>
-</head>
-<body>
-  <div class="header">PodCaster</div>
-  <div class="container">
-    <div class="foreground">
-      <form id="user-input">
-        <div class="questionOne">
-          <div class="form-group">
-            <h1>1. How do you describe the world?</h1>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="question1" id="round-answer" value="1A" checked>
-              <label class="form-check-label" for="round">
-                Incontrovertibly round
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="question1" id="flat-answer" value="1B">
-              <label class="form-check-label" for="flat">
-                Obviously flat
-              </label>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <!-- Picture-based question -->
-        <div class="questionTwo">
-          <div class="form-group">
-            <h1>2. What activity sounds most appealing to you?</h1>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="question2" id="nightmare-answer" value="2A" checked>
-              <label class="form-check-label" for="nightmare-answer">
-                Watching horror movies with nightmarish realities
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="question2" id="hilarity-answer" value="2B">
-              <label class="form-check-label" for="hilarity-answer">
-                Indulging in hilarity, uproar, and nonsense
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="question2" id="learning-answer" value="2C">
-              <label class="form-check-label" for="learning-answer">
-                Learning a new trade, skill, or DIY project
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="question2" id="stories-answer" value="2D">
-              <label class="form-check-label" for="stories-answer">
-                Listening to stories that uplift my chicken soup
-              </label>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet">
+    <title>PodCaster</title>
+  </head>
+  <body>
+    <div class="header">PodCaster</div>
+    <div class="container">
+      <div class="foreground">
+        <form id="user-input">
+          <div class="questionOne">
+            <div class="form-group">
+              <h1>1. How do you describe the world?</h1> <!-- Question One -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question1" id="round-answer" value="1A" checked>
+                <label class="form-check-label" for="round">
+                  Incontrovertibly round
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question1" id="flat-answer" value="1B">
+                <label class="form-check-label" for="flat">
+                  Obviously flat
+                </label>
+              </div>
             </div>
           </div>
-        </div>
-        <hr />
-        <!-- Range for triggerometer-->
-        <div class="questionThree">
-          <h1>3. Rate how triggered you feel at this very moment:</h1>
-          <label for="firstLabel"><div class="left-label"><em>"I can't be in the same room <br>as pizza, don't talk to me!"</em></div></label>
-          <label for="secondLabel" id="q3RightLabel"><div class="right-label"><em>"Give me the skinny on sex, politics,<br> death, and other people's money!"</em></div></label>
-          <input type="range" class="custom-range" min="0" max="5" step="1" id="question3">
           <hr />
-          <!-- <div class="float-left">
-        </div> -->
-      </div>
-      <div class="questionFour">
-        <div class="form-group">
-          <h1>4. How do you feel about being told what to do?</h1>
-          <select class="custom-select" id="question4">
-            <option selected>Choose from the following:</option>
-            <option value="4A">I know what others want, need, and desire. People seek high and low for my pearls of wisdom.</option>
-            <option value="4B">I read horoscopes. I know what's right with the multiverse. </option>
-            <option value="4C">Please, I'm desperate! Teach me how to breathe.</option>
-          </select>
-        </div>
-      </div>
-      <hr />
-      <div class="questionFive">
-        <h1>5. Which hero makes your heart beat? Who gives you inspiration, drive, spunk, motivation? </h1>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="form-check">
-              <label class="form-check-label" for="spongebob-answer">
-                <input class="form-check-input" type="radio" name="question5" id="spongebob-answer" value="5A" checked>
-                <img src="img/sb.jpg" alt="a picture of spongebob">
-              </label>
+          <div class="questionTwo"><!-- Question Two -->
+            <div class="form-group">
+              <h1>2. What activity sounds most appealing to you?</h1>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question2" id="nightmare-answer" value="2A" checked>
+                <label class="form-check-label" for="nightmare-answer">
+                  Watching horror movies with nightmarish realities
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question2" id="hilarity-answer" value="2B">
+                <label class="form-check-label" for="hilarity-answer">
+                  Indulging in hilarity, uproar, and nonsense
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question2" id="learning-answer" value="2C">
+                <label class="form-check-label" for="learning-answer">
+                  Learning a new trade, skill, or DIY project
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="question2" id="stories-answer" value="2D">
+                <label class="form-check-label" for="stories-answer">
+                  Listening to stories that uplift my chicken soup
+                </label>
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="form-check">
-              <label class="form-check-label" for="michelle-obama">
-                <input class="form-check-input" type="radio" name="question5" id="michelle-obama" value="5C">
-                <img src="img/obama.jpg" alt="An image of Michelle Obama">
-              </label>
-            </div>
+          <hr />
+          <!-- Range for triggerometer-->
+          <div class="questionThree"> <!-- Question Three -->
+            <h1>3. Rate how triggered you feel at this very moment:</h1>
+            <label for="firstLabel"><div class="left-label"><em>"I can't be in the same room <br>as pizza, don't talk to me!"</em></div></label>
+            <label for="secondLabel" id="q3RightLabel"><div class="right-label"><em>"Give me the skinny on sex, politics,<br> death, and other people's money!"</em></div></label>
+            <input type="range" class="custom-range" min="0" max="5" step="1" id="question3">
+            <hr />
           </div>
-          <div class="col-md-3">
-            <div class="form-check">
-              <label class="form-check-label" for="katy-perry">
-                <input class="form-check-input" type="radio" name="question5" id="katy-perry" value="5B">
-                <img src="img/katy.jpg" alt="a photo of Katy Perry">
-              </label>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="form-check">
-              <label class="form-check-label" for="ndtyson-answer">
-                <input class="form-check-input" type="radio" name="question5" id="ndtyson-answer" value="5D">
-                <img src="img/neil.jpg" alt="a picture of Neil DeGrasse Tyson">
-              </label>
-            </div>
+        <div class="questionFour"> <!-- Question Four -->
+          <div class="form-group">
+            <h1>4. How do you feel about being told what to do?</h1>
+            <select class="custom-select" id="question4">
+              <option selected>Choose from the following:</option>
+              <option value="4A">I know what others want, need, and desire. People seek high and low for my pearls of wisdom.</option>
+              <option value="4B">I read horoscopes. I know what's right with the multiverse. </option>
+              <option value="4C">Please, I'm desperate! Teach me how to breathe.</option>
+            </select>
           </div>
         </div>
-      </div>
-      <hr />
-      <div class="questionSix">
-        <div class="form-group">
-          <h1>6. What are your favorite types of facts?</h1>
-          <select class="custom-select" id="question6">
-            <option selected>Choose from the following:</option>
-            <option value="6A">Alternative facts</option>
-            <option value="6B">Evidence-based facts</option>
-            <option value="6C">Opinions masquerading as facts</option>
-            <option value="6D">I love to fax</option>
-          </select>
+        <hr />
+        <div class="questionFive"> <!-- Question Five -->
+          <h1>5. Which hero makes your heart beat? Who gives you inspiration, drive, spunk, motivation? </h1>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-check">
+                <label class="form-check-label" for="spongebob-answer">
+                  <input class="form-check-input" type="radio" name="question5" id="spongebob-answer" value="5A" checked>
+                  <img src="img/sb.jpg" alt="a picture of spongebob">
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <label class="form-check-label" for="michelle-obama">
+                  <input class="form-check-input" type="radio" name="question5" id="michelle-obama" value="5C">
+                  <img src="img/obama.jpg" alt="An image of Michelle Obama">
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <label class="form-check-label" for="katy-perry">
+                  <input class="form-check-input" type="radio" name="question5" id="katy-perry" value="5B">
+                  <img src="img/katy.jpg" alt="a photo of Katy Perry">
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <label class="form-check-label" for="ndtyson-answer">
+                  <input class="form-check-input" type="radio" name="question5" id="ndtyson-answer" value="5D">
+                  <img src="img/neil.jpg" alt="a picture of Neil DeGrasse Tyson">
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <hr />
-      <div class="questionSeven">
-        <div class="form-group">
-          <h1>7. Click all that interests you:</h1>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck1" value="7A">
-            <label class="custom-control-label" for="customCheck1">
-            <div class="bold">Star Wars</div>
-              <p>Centered on a film series created by George Lucas. It depicts the adventures of characters "A long time ago in a galaxy far, far away".</p>
-            </label>
+        <hr />
+        <div class="questionSix"><!-- Question Six -->
+          <div class="form-group">
+            <h1>6. What are your favorite types of facts?</h1>
+            <select class="custom-select" id="question6">
+              <option selected>Choose from the following:</option>
+              <option value="6A">Alternative facts</option>
+              <option value="6B">Evidence-based facts</option>
+              <option value="6C">Opinions masquerading as facts</option>
+              <option value="6D">I love to fax</option>
+            </select>
           </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck2" value="7B">
-            <label class="custom-control-label" for="customCheck2"><div class="bold">Battlestar Galactica</div>
-              <p>When an old enemy, the Cylons, resurface and obliterate the 12 colonies, the crew of the aged Galactica protect a small civilian fleet.</p>
-          </label>
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck3" value="7C">
-            <label class="custom-control-label" for="customCheck3"><div class="bold">Space Force</div>
-              <p>A proposed sixth branch of the United States Armed Forces under the current administration- intended to have control over military operations in outer space, but more likely a waste of resources.</p>
-            </label>
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck4" value="7D">
-            <label class="custom-control-label" for="customCheck4"><div class="bold">The International Space Station</div>
-            <p>The International Space Station is a space station, or a habitable artificial satellite, in low Earth orbit.</p>
-            </label>
-          </div>
-      </div>
-      </div>
-      <hr />
-      <div class="questionEight">
-        <h1>8. Choose between the following:</h1>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="form-check">
-              <label class="form-check-label" for="fantasy-answer">
-                <input class="form-check-input" type="radio" name="question8" id="fantasy-answer" value="8A" checked>
-                <img src="img/fantasy1.gif" alt="">
+        </div>
+        <hr />
+        <div class="questionSeven"><!-- Question Seven -->
+          <div class="form-group">
+            <h1>7. Click all that interests you:</h1>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1" value="7A">
+              <label class="custom-control-label" for="customCheck1">
+                <div class="bold">Star Wars</div>
+                <p>Centered on a film series created by George Lucas. It depicts the adventures of characters "A long time ago in a galaxy far, far away".</p>
               </label>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="form-check">
-              <label class="form-check-label" for="einstein">
-                <input class="form-check-input" type="radio" name="question8" id="einstein" value="8D">
-                <img src="img/einstein.gif" alt="gif of Einstein">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck2" value="7B">
+              <label class="custom-control-label" for="customCheck2"><div class="bold">Battlestar Galactica</div>
+                <p>When an old enemy, the Cylons, resurface and obliterate the 12 colonies, the crew of the aged Galactica protect a small civilian fleet.</p>
               </label>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="form-check">
-              <label class="form-check-label" for="comedy-answer">
-                <input class="form-check-input" type="radio" name="question8" id="comedy-answer" value="8B">
-                <img src="img/dog.gif" alt="gif of cat">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck3" value="7C">
+              <label class="custom-control-label" for="customCheck3"><div class="bold">Space Force</div>
+                <p>A proposed sixth branch of the United States Armed Forces under the current administration- intended to have control over military operations in outer space, but more likely a waste of resources.</p>
               </label>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="form-check">
-              <label class="form-check-label" for="news-answer">
-                <input class="form-check-input" type="radio" name="question8" id="news-answer" value="8C">
-                <img src="img/stewart.gif" alt="">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck4" value="7D">
+              <label class="custom-control-label" for="customCheck4"><div class="bold">The International Space Station</div>
+                <p>The International Space Station is a space station, or a habitable artificial satellite, in low Earth orbit.</p>
               </label>
             </div>
           </div>
         </div>
+        <hr />
+        <div class="questionEight"> <!-- Question Eight -->
+          <h1>8. Choose between the following:</h1>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-check">
+                <label class="form-check-label" for="fantasy-answer">
+                  <input class="form-check-input" type="radio" name="question8" id="fantasy-answer" value="8A" checked>
+                  <img src="img/fantasy1.gif" alt="">
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <label class="form-check-label" for="einstein">
+                  <input class="form-check-input" type="radio" name="question8" id="einstein" value="8D">
+                  <img src="img/einstein.gif" alt="gif of Einstein">
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <label class="form-check-label" for="comedy-answer">
+                  <input class="form-check-input" type="radio" name="question8" id="comedy-answer" value="8B">
+                  <img src="img/dog.gif" alt="gif of cat">
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <label class="form-check-label" for="news-answer">
+                  <input class="form-check-input" type="radio" name="question8" id="news-answer" value="8C">
+                  <img src="img/stewart.gif" alt="">
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <button type="submit" name="button">Submit</button>
+      </form>
+      <div id="modalHolder">
       </div>
-      <hr />
-      <button type="submit" name="button">Submit</button>
-    </form>
-    <div id="modalHolder">
     </div>
-  </div>
-</div> <!--CONTAINER-->
-</body>
-</div>
+  </div> <!--CONTAINER-->
+  </body>
 </html>
