@@ -99,59 +99,59 @@ function finalScoreProducer (truth,smarts) {
       var finalScore = finalScoreProducer(truthiness,intelligence);
       console.log(finalScore);
 
-      switch (finalScore) {
-        // case "0,0":
-        // $("#myModal").modal('show');
-        case "1,1":
-        $("#comedyBangBang").modal('show');
-        break;
-        case "1,2":
-        $("#noSleep").modal('show');
-        break;
-        case "1,3":
-        $("#burtonReads").modal('show');
-        break;
-        case "1,4":
-        $("#bingeMode").modal('show');
-        break;
-        case "2,1":
-        $("#casketDelights").modal('show');
-        break;
-        case "2,2":
-        $("#nightVale").modal('show');
-        break;
-        case "2,3":
-        $("#lore").modal('show');
-        break;
-        case "2,4":
-        $("#ridiculousHistory").modal('show');
-        break;
-        case "3,1":
-        $("#savageLove").modal('show');
-        break;
-        case "3,2":
-        $("#creativePepTalk").modal('show');
-        break;
-        case "3,3":
-        $("#rossAndCarrie").modal('show');
-        break;
-        case "3,4":
-        $("#theModernAcre").modal('show');
-        break;
-        case "4,1":
-        $("#waitWait").modal('show');
-        break;
-        case "4,2":
-        $("#noSuchFish").modal('show');
-        break;
-        case "4,3":
-        $("#smallDoses").modal('show');
-        break;
-        case "4,4":
-        $("#momStuff").modal('show');
-        break;
-        default: alert("whoops! something went wrong!")
-      }
+      $("#myModal").modal('show');
+      var masterPodcastList = [creativePepTalk, lore, comedyBangBang, noSleepPodcast, bingeMode, theModernAcre, momStuff, smallDoses, savageLovecast, waitWait, noSuchThingAsAFish, casketOfFictionalDelights, welcomeToNightVale, ohNoRossAndCarrie, levarBurtonReads, ridiculousHistory];
+      // switch (finalScore) {
+      //   case "1,1":
+      //   $("#comedyBangBang").modal('show');
+      //   break;
+      //   case "1,2":
+      //   $("#noSleep").modal('show');
+      //   break;
+      //   case "1,3":
+      //   $("#burtonReads").modal('show');
+      //   break;
+      //   case "1,4":
+      //   $("#bingeMode").modal('show');
+      //   break;
+      //   case "2,1":
+      //   $("#casketDelights").modal('show');
+      //   break;
+      //   case "2,2":
+      //   $("#nightVale").modal('show');
+      //   break;
+      //   case "2,3":
+      //   $("#lore").modal('show');
+      //   break;
+      //   case "2,4":
+      //   $("#ridiculousHistory").modal('show');
+      //   break;
+      //   case "3,1":
+      //   $("#savageLove").modal('show');
+      //   break;
+      //   case "3,2":
+      //   $("#creativePepTalk").modal('show');
+      //   break;
+      //   case "3,3":
+      //   $("#rossAndCarrie").modal('show');
+      //   break;
+      //   case "3,4":
+      //   $("#theModernAcre").modal('show');
+      //   break;
+      //   case "4,1":
+      //   $("#waitWait").modal('show');
+      //   break;
+      //   case "4,2":
+      //   $("#noSuchFish").modal('show');
+      //   break;
+      //   case "4,3":
+      //   $("#smallDoses").modal('show');
+      //   break;
+      //   case "4,4":
+      //   $("#momStuff").modal('show');
+      //   break;
+      //   default: alert("whoops! something went wrong!")
+      // }
       console.log("answer1 = "+answer1,"answer2 = "+ answer2,"answer3 = "+answer3,"answer4 = "+answer4,"answer5 = "+answer5,"answer6 = "+answer6,"answer7 = "+answer7Array,"answer8 = "+answer8);
 
       // var creativePepTalk = new Podcast ('Creative Pep Talk', 'https://i1.sndcdn.com/avatars-000316821086-8aqvnm-t500x500.jpg', "Are you a creative entrepreneur? Freelancer? Aspiring creative pro? If so, this podcast was made for you! Andy J. Miller is passionate about helping creatives strike the perfect balance between art and business. Through ridiculous analogies, personal stories and artist interviews, Andy hopes to help you break free from confusion and make a plan for your creative career success! You'll get this and MORE! (the more being Boyz II Men and Fraggle Rock references).", 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/491740260&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', 'http://www.creativepeptalk.com', '3', '2');
@@ -170,7 +170,7 @@ function finalScoreProducer (truth,smarts) {
       //
       // var smallDoses = new Podcast ('Small Doses', 'https://starburns.audio/wp-content/uploads/2018/02/SMALL-DOSES-big-768x768.jpg', 'Comedian, actress, writer, producer, and more, Amanda Seales doesn’t just make you laugh, she makes change! With an uncanny knack for taking serious topics (racism, rape culture, sexism, police brutality, etc.) and with humor, making them relatable and interesting, she combines intellectual wit, irreverent silliness and a pop culture obsession to create her unique style of smart funny content for the stage and screens.', 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/385044833&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', 'https://starburns.audio/podcasts/small-doses-with-amanda-seales/', '4', '3');
       //
-      // var savageLovecast = new Podcast ('Savage Lovecast', 'http://toqueland.com/wp-content/uploads/2018/02/SavageLovecast.jpeg', 'Comedian, actress, writer, producer, and more, Amanda Seales doesn’t just make you laugh, she makes change! With an uncanny knack for taking serious topics (racism, rape culture, sexism, police brutality, etc.) and with humor, making them relatable and interesting, she combines intellectual wit, irreverent silliness and a pop culture obsession to create her unique style of smart funny content for the stage and screens.', 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/476124033&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', 'https://www.savagelovecast.com/', '3', '1');
+      // var savageLovecast = new Podcast ('Savage Lovecast', 'http://toqueland.com/wp-content/uploads/2018/02/SavageLovecast.jpeg', 'Dan Savage is an author, a sex-advice columnist, a podcaster, a pundit, and a public speaker. "Savage Love," Dan's sex-advice column, first appeared in the The Stranger, Seattle’s alternative weekly, in 1991. The column is now syndicated to more than 50 papers across the United States and Canada. Dan has published six books. His newest book, American Savage, will be published in May of 2013. Dan’s graphic, pragmatic, and humorous advice has changed the cultural conversation about monogamy, gay rights, religiosity, and politics.', 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/476124033&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', 'https://www.savagelovecast.com/', '3', '1');
       //
       // var waitWait = new Podcast ("Wait Wait Don't Tell me", 'https://media.npr.org/assets/img/2018/08/06/npr_wwdtm_podcasttile_sq-1e9edf5dfb49a3fff3703764e39442173ba8558a-s700-c85.jpg', "NPR's weekly current events quiz. Have a laugh and test your news knowledge while figuring out what's real and what we've made up. The show averages about 6 million weekly listeners on air and via podcast.", 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/124704621&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', 'https://www.npr.org/podcasts/344098539/wait-wait-don-t-tell-me', '4', '1');
       //
