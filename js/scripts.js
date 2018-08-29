@@ -42,31 +42,18 @@ var ridiculousHistory = new Podcast ('Ridiculous History', 'https://is4-ssl.mzst
 
 var masterPodcastList = [creativePepTalk, lore, comedyBangBang, noSleepPodcast, bingeMode, theModernAcre, momStuff, smallDoses, savageLovecast, waitWait, noSuchThingAsAFish, casketOfFictionalDelights, welcomeToNightVale, ohNoRossAndCarrie, levarBurtonReads, ridiculousHistory];
 
-function finalTruthProducer (truth) {
-  var truthScore = 0;
-  if (truth >= 0 && truth <= 5) {
-    truthScore = 1;
-  } else if (truth >= 6 && truth <= 10) {
-    truthScore = 2;
-  } else if (truth >= 11 && truth <= 15) {
-    truthScore = 3;
-  } else if (truth >= 16) {
-    truthScore = 4;
-  } return truthScore;
-}
-
-function finalIntelligenceProducer (smarts) {
-  var intelligenceScore = 0;
-  if (smarts >= 0 && smarts <= 5) {
-    intelligenceScore = 1;
-  } else if (smarts >= 6 && smarts <= 10) {
-    intelligenceScore = 2;
-  } else if (smarts >= 11 && smarts <= 15) {
-    intelligenceScore = 3;
-  } else if (smarts >= 16) {
-    intelligenceScore = 4;
-  } return intelligenceScore;
-}
+function finalScoreProducer (score) {
+  var finalScore = 0;
+    if (score >= 0 && score <= 5) {
+      finalScore = 1;
+    } else if (score >= 6 && score <= 10) {
+      finalScore = 2;
+    } else if (score >= 11 && score <= 15) {
+      finalScore = 3;
+    } else if (score >= 16) {
+      finalScore = 4;
+    } return finalScore;
+  }
 
   //front-end logic
   $(document).ready(function() {
@@ -141,9 +128,8 @@ function finalIntelligenceProducer (smarts) {
           intelligence += 5;
         }
 
-// grid coordinates
-        var userTruth = finalTruthProducer(truthiness);
-        var userIntelligence = finalIntelligenceProducer(intelligence);
+        var userTruth = finalScoreProducer(truthiness);
+        var userIntelligence = finalScoreProducer(intelligence);
 
 // prototype for constructor
       masterPodcastList.forEach(function(podcast) {
