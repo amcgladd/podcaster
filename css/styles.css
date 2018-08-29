@@ -23,6 +23,31 @@ p {
   /* font-family: 'Assistant', sans-serif; */
 }
 
+.home-links {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+
+#home-purple {
+  background-color: #6643bc;
+}
+
+.home-header {
+  font-family: 'Kanit', sans-serif;
+  font-size: 125px;
+  color: white;
+  margin: 200px;
+  text-align: center;
+}
+
 #welcome {
   margin: 20px;
 }
