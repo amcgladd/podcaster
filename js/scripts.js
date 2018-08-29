@@ -1,11 +1,11 @@
 function Podcast(name, image, text, embed, link, truthiness, intelligence) {
-this.name = name;
-this.image = image;
-this.text = text;
-this.embed = embed;
-this.link = link;
-this.truth = truthiness;
-this.intelligence = intelligence;
+  this.name = name;
+  this.image = image;
+  this.text = text;
+  this.embed = embed;
+  this.link = link;
+  this.truth = truthiness;
+  this.intelligence = intelligence;
 }
 
 var creativePepTalk = new Podcast ('Creative Pep Talk', 'https://i1.sndcdn.com/avatars-000316821086-8aqvnm-t500x500.jpg', "Are you a creative entrepreneur? Freelancer? Aspiring creative pro? If so, this podcast was made for you! Andy J. Miller is passionate about helping creatives strike the perfect balance between art and business. Through ridiculous analogies, personal stories and artist interviews, Andy hopes to help you break free from confusion and make a plan for your creative career success! You'll get this and MORE! (the more being Boyz II Men and Fraggle Rock references).", 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/491740260&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', 'http://www.creativepeptalk.com', '3', '2');
@@ -44,108 +44,112 @@ var masterPodcastList = [creativePepTalk, lore, comedyBangBang, noSleepPodcast, 
 
 function finalScoreProducer (score) {
   var finalScore = 0;
-    if (score <= 5) {
-      finalScore = 1;
-    } else if (score >= 6 && score <= 10) {
-      finalScore = 2;
-    } else if (score >= 11 && score <= 15) {
-      finalScore = 3;
-    } else if (score >= 16) {
-      finalScore = 4;
-    } return finalScore;
-  }
 
-  //front-end logic
-  $(document).ready(function() {
-    $("#user-input").submit(function(event){
-      event.preventDefault();
+  if (score <= 5) {
+    finalScore = 1;
+  } else if (score >= 6 && score <= 10) {
+    finalScore = 2;
+  } else if (score >= 11 && score <= 15) {
+    finalScore = 3;
+  } else if (score >= 16) {
+    finalScore = 4;
+  } return finalScore;
 
-      var answer1 = $("input:radio[name=question1]:checked").val();
-      var answer2 = $("input:radio[name=question2]:checked").val();
-      var answer3 = parseInt($("#question3").val());
-      var answer4 = $("#question4").val();
-      var answer5 = $("input:radio[name=question5]:checked").val();
-      var answer6 = $("#question6").val();
-      var answer7Array = [];
-      var answer7 = $("input:checkbox:checked").each(function() {
-        answer7Array.push($(this).val());
-      });
-      var answer8 = $("input:radio[name=question8]:checked").val();
+}
 
-      //scoring logic
-        var truthiness = 0;
-        var intelligence = 0;
+//front-end logic
+$(document).ready(function() {
+  $("#user-input").submit(function(event){
+    event.preventDefault();
 
-        //q1 logic
-        if (answer1 === "1A") {
-          truthiness += 5;
-        } else { intelligence -= 2;
-      }
-
-        //q2 logic
-        if (answer2 === "2A") {
-          intelligence += 5;
-        } else if (answer2 === "2C") {
-          intelligence += 2;
-      }
-
-        //q3 logic
-        truthiness += answer3;
-
-        //q4 logic
-        if (answer4 === "4B") {
-          truthiness += 3;
-        } else if (answer4 === "4C") {
-          truthiness += 5;
-        } else  { truthiness -= 2;
-      }
-
-        //q5 logic
-        if (answer5 === "5B") {
-          intelligence += 3;
-        } else if (answer5 === "5C") {
-          intelligence +=1;
-        } else if (answer5 === "5D") {
-          intelligence +=5;
-        } else { intelligence -= 1;
-      }
-
-        //q6 logic
-        if (answer6 === "6B") {
-          truthiness += 5;
-        } else if (answer6 === "6C") {
-          truthiness += 2;
-        } else if (answer6 === "6D") {
-          truthiness -= 1;
-        } else { truthiness -= 3;
-      }
-
-        //q7 logic
-        intelligence += answer7Array.length;
-
-        //q8 logic
-        if (answer8 === "8B") {
-          intelligence += 5;
-        } else if (answer8 === "8C") {
-          intelligence -= 1;
-        } else if (answer8 === "8D") {
-          intelligence += 5;
-        }
-
-
-console.log("int = "+intelligence,"truthy = "+truthiness);
-        var userTruth = finalScoreProducer(truthiness);
-        var userIntelligence = finalScoreProducer(intelligence);
-
-
-
-// prototype for constructor
-      masterPodcastList.forEach(function(podcast) {
-        if ((podcast.truth == userTruth) && (podcast.intelligence == userIntelligence)) {
-          console.log(podcast.name);
-          $("#modalHolder").html('<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby='+ podcast.name + 'aria-hidden="true"><div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">'+ podcast.name +'</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><div class="container-fluid"><p><img src="'+ podcast.image +'">'+ podcast.text +'<br><a href="'+ podcast.link +'" target="_blank">'+ podcast.link +'</a></p></div><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="'+ podcast.embed +'"></iframe></div></div></div></div>');
-          $("#myModal").modal('show');
-        }
-      })
+    var answer1 = $("input:radio[name=question1]:checked").val();
+    var answer2 = $("input:radio[name=question2]:checked").val();
+    var answer3 = parseInt($("#question3").val());
+    var answer4 = $("#question4").val();
+    var answer5 = $("input:radio[name=question5]:checked").val();
+    var answer6 = $("#question6").val();
+    var answer7Array = [];
+    var answer7 = $("input:checkbox:checked").each(function() {
+      answer7Array.push($(this).val());
     });
+    var answer8 = $("input:radio[name=question8]:checked").val();
+
+    //scoring logic
+    var truthiness = 0;
+    var intelligence = 0;
+
+    //q1 logic
+    if (answer1 === "1A") {
+      truthiness += 5;
+    } else { intelligence -= 2;
+
+    }
+
+    //q2 logic
+    if (answer2 === "2A") {
+      intelligence += 5;
+    } else if (answer2 === "2C") {
+      intelligence += 2;
+
+    }
+
+    //q3 logic
+    truthiness += answer3;
+
+    //q4 logic
+    if (answer4 === "4B") {
+      truthiness += 3;
+    } else if (answer4 === "4C") {
+      truthiness += 5;
+    } else  { truthiness -= 2;
+
+    }
+
+    //q5 logic
+    if (answer5 === "5B") {
+      intelligence += 3;
+    } else if (answer5 === "5C") {
+      intelligence +=1;
+    } else if (answer5 === "5D") {
+      intelligence +=5;
+    } else { intelligence -= 1;
+
+    }
+
+    //q6 logic
+    if (answer6 === "6B") {
+      truthiness += 5;
+    } else if (answer6 === "6C") {
+      truthiness += 2;
+    } else if (answer6 === "6D") {
+      truthiness -= 1;
+    } else { truthiness -= 3;
+
+    }
+
+    //q7 logic
+    intelligence += answer7Array.length;
+
+    //q8 logic
+    if (answer8 === "8B") {
+      intelligence += 5;
+    } else if (answer8 === "8C") {
+      intelligence -= 1;
+    } else if (answer8 === "8D") {
+      intelligence += 5;
+
+    }
+
+    var userTruth = finalScoreProducer(truthiness);
+    var userIntelligence = finalScoreProducer(intelligence);
+
+    // prototype for constructor
+    masterPodcastList.forEach(function(podcast) {
+      if ((podcast.truth == userTruth) && (podcast.intelligence == userIntelligence)) {
+        console.log(podcast.name);
+        $("#modalHolder").html('<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby='+ podcast.name + 'aria-hidden="true"><div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">'+ podcast.name +'</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><div class="container-fluid"><p><img src="'+ podcast.image +'">'+ podcast.text +'<br><a href="'+ podcast.link +'" target="_blank">'+ podcast.link +'</a></p></div><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="'+ podcast.embed +'"></iframe></div></div></div></div>');
+        $("#myModal").modal('show');
+      }
+    })
   });
+});
