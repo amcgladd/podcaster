@@ -1,6 +1,6 @@
 
 img {
-  width: 185px;
+  width: 195px;
   margin-right: 15px;
   float: left;
 }
@@ -80,5 +80,9 @@ label > input + img{ /* IMAGE STYLES */
   border:2px solid transparent;
 }
 label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border:5px solid #6643bc;
+  border:7px solid #6643bc;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+  background-color: #6643bc;
 }
