@@ -1,0 +1,25 @@
+.grid-show {
+  margin: 50px 100px 50px 100px;
+}
+
+.col-md-3 {
+  padding: 10px;
+}
+
+#welcome {
+  margin: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (min-width: 576px)  {
+  .grid-show {
+    margin: 90px 210px 90px 210px;
+    padding: 5px;
+  }
+  #welcome {
+    margin: 20px;
+  }
+}
