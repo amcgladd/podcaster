@@ -11,52 +11,13 @@ h5 {
   font-size: 30px;
 }
 
-.grid-show {
-  margin: 90px 210px 0px 210px;
-  padding: 5px;
-}
-
 p {
   font-family: 'Abel', sans-serif;
   font-size: 17px;
-
-  /* font-family: 'Assistant', sans-serif; */
-}
-
-.home-links {
-  font-family: 'Abel', sans-serif;
-  font-size: 30px;
-  text-align: center;
-}
-
-a:link {
-  color: white;
-}
-a:visited {
-  color: white;
-}
-
-#home-purple {
-  background-color: #6643bc;
-}
-
-.home-header {
-  font-family: 'Kanit', sans-serif;
-  font-size: 125px;
-  color: white;
-  margin: 200px;
-  text-align: center;
-}
-
-#welcome {
-  margin: 20px;
-}
-
-#grid-row {
-  margin: 7px;
 }
 
 h1 {
+  font-size: 22px;
   font-family: 'Chivo', sans-serif;
   padding: 30px 0px 30px 0px;
 }
@@ -65,19 +26,56 @@ button {
   background-color:  #6643bc;
   color: white;
 }
+a:link {
+ color: white;
+ text-decoration: none;
+}
+
+a:visited {
+ color: white;
+}
 
 .modal-header {
   background-color: #6643bc;
-  /* background-image: url(https://i2.pickpik.com/photos/20/186/442/notebook-paper-paper-texture-lines-preview.jpg); */
-
 }
 
 .header {
   font-family: 'Kanit', sans-serif;
-  font-size: 125px;
+  font-size: 50px;
   background-color: #6643bc;
   color: white;
+  padding-left: 38px;
+}
+
+.left-label {
+  width: 80%;
+  margin-right: 0px;
+  font-size: 15px;
+}
+
+.right-label {
+  width: 80%;
+  margin-left: 200px;
+  font-size: 15px;
+}
+
+@media (min-width: 576px) {
+  .header {
+  font-size: 125px;
   padding-left: 100px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .left-label {
+    font-size: 30px;
+    width: 350px;
+  }
+  .right-label {
+    margin-left: 120px;
+    width: 90%;
+    font-size: 30px;
+  }
 }
 
 .foreground {
@@ -90,16 +88,6 @@ button {
   width:100%;
 }
 
-.left-label {
-  margin-left: 35px;
-  margin-right: 200px;
-  font-size: 25px;
-}
-
-.right-label {
-  margin-left: 200px;
-  font-size: 25px;
-}
 
 .bold {
   font-weight: bolder;
