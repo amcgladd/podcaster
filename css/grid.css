@@ -1,0 +1,51 @@
+
+.grid-show {
+  margin: 50px 100px 50px 100px;
+  max-width: 800px;
+}
+ .col-md-3 {
+  padding: 10px;
+}
+ #welcome {
+  margin: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+ img {
+  max-width: 100%;
+}
+
+a:link {
+ color: white;
+ text-decoration: none;
+}
+
+a:visited {
+ color: white;
+}
+
+
+ @media (min-width: 576px)  {
+  .grid-show {
+    /* margin: 90px 210px 90px 210px; */
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #welcome {
+    margin: 20px;
+  }
+}
+/* .col-md-3 img {
+  height: 200px;
+  width: 200px;
+  -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+}
+.col-md-3 img:hover {
+  width: 300px;
+  height: 300px;
+} */

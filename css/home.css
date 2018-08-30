@@ -1,0 +1,40 @@
+.home-header {
+  font-family: 'Kanit', sans-serif;
+  font-size: 50px;
+  color: white;
+  margin: 20px auto 20px auto;
+  text-align: center;
+}
+ .home-links1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+ .home-links2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+ a:link {
+  color: white;
+}
+ a:visited {
+  color: white;
+}
+ #home-purple {
+  background-color: #6643bc;
+ }
+ @media (min-width: 576px) {
+  .home-header {
+    font-size: 125px;
+    margin: 70px auto 70px auto;
+  }
+  .home-links1 {
+    font-size: 30px;
+    text-align: right;
+  }
+  .home-links2 {
+    font-size: 30px;
+    text-align: left;
+  }
+}
