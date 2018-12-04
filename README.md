@@ -44,7 +44,7 @@ Clone this repository and open in any http server. It is found at [Github Pages]
 
 ## Support and contact details
 
-Feel free to contact dustin.starke@gmail.com
+Feel free to contact amcgladd@gmail.com
 
 ### Legal
 
