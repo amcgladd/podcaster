@@ -1,8 +1,15 @@
+![logo](https://github.com/amcgladd/podcaster/blob/master/img/title.png)
 # Podcaster
 
 #### [View the site here.](https://amcgladd.github.io/podcaster/)
 
+![sample1](https://github.com/amcgladd/podcaster/blob/master/img/sample1.png)
+
+![sample2](https://github.com/amcgladd/podcaster/blob/master/img/sample2.png)
+
+
 ##### A Podcast suggester a la Buzzfeed, August 27th, 2018
+
 
 #### By Krystal Foster, Hingyi Khong, AJ MCgladdery, and Dustin Starke
 
