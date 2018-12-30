@@ -50,7 +50,7 @@ Clone this repository and open in any http server. It is found at [Github Pages]
 * Bootstrap v.4.1.3
 * JavaScript
 * jQuery v.3.3.1
-* Google api fonts
+* Google API fonts
 
 ## Support and contact details
 
